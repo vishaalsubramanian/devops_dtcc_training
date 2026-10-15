@@ -1,0 +1,67 @@
+Summary: Create and Modify a Dockerfile to Install Required Packages
+
+Description
+
+Demonstrate Docker image creation using a custom Dockerfile. Build an image with the required Linux utilities, run a container from the image, and modify the Dockerfile by removing the unzip utility and adding PHP. Rebuild the image and verify the updated package configuration.
+
+Tasks to Perform
+
+Create a project directory for the Dockerfile exercise.
+
+Create a file named Dockerfile.
+
+Use an Ubuntu base image in the Dockerfile.
+
+Write the necessary instructions to update the package repository and install:
+
+vim
+
+wget
+
+unzip
+
+Build a Docker image using the Dockerfile.
+
+Run a container using the custom image.
+
+Verify that vim, wget, and unzip are installed.
+
+Modify the Dockerfile:
+
+Remove unzip from the package installation list.
+
+Add PHP using the appropriate Ubuntu package.
+
+Rebuild the Docker image.
+
+Run a new container using the updated image.
+
+Verify that PHP is installed and that vim and wget remain available.
+
+Verify that unzip is no longer installed.
+
+Capture screenshots of the Dockerfile, image build process, and package verification.
+
+Acceptance Criteria
+
+A valid Dockerfile is created.
+
+The initial image builds successfully with vim, wget, and unzip.
+
+A container is created and run from the initial image.
+
+The Dockerfile is updated to remove unzip and add PHP.
+
+The updated image builds successfully.
+
+PHP, vim, and wget are verified in the updated container.
+
+The removal of unzip is verified.
+
+Screenshots and command outputs are attached to the Jira ticket.
+
+The task is ready for administrator review.
+
+Deliverables
+
+The initial and updated Dockerfiles, Docker build and run commands, terminal screenshots, package verification outputs, and a short explanation of the changes made.

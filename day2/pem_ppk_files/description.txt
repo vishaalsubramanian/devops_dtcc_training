@@ -1,0 +1,20 @@
+
+
+Objective: Understand SSH key-based authentication and demonstrate conversion between PuTTY and OpenSSH private-key formats.
+
+Acceptance criteria:
+
+Explain public and private keys.
+
+Obtain a test SSH key pair.
+
+Convert an OpenSSH-compatible private key to .ppk.
+
+Export the .ppk back to an OpenSSH-compatible format.
+
+Explain where PEM and PPK are used.
+
+Validate the converted key through an SSH connection.
+
+Attach screenshots without exposing private-key contents.
+

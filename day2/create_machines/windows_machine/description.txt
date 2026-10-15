@@ -1,0 +1,45 @@
+Windows EC2 Instance
+
+Step
+
+Action
+
+Launch instance
+
+EC2 → Launch instance.
+
+Name instance
+
+Enter Windows-Server.
+
+Select OS
+
+Choose a suitable Windows Server AMI.
+
+Instance type
+
+Choose an eligible instance type with enough memory for Windows.
+
+Key pair
+
+Create or select a key pair to decrypt the Windows administrator password.
+
+Network settings
+
+Use the same default VPC and, where possible, the same default subnet as Ubuntu.
+
+Security group
+
+Allow RDP (TCP port 3389) from My IP only.
+
+Storage
+
+Keep the default or recommended Windows storage size.
+
+Launch
+
+Launch the instance and wait for its status checks to pass.
+
+10. Connect
+
+Retrieve the administrator password and connect using Remote Desktop.

@@ -1,0 +1,17 @@
+Windows Server EC2 — Static Web Application Deployment
+
+Obtain Source Code: Obtain the static application's source code, including HTML, CSS, JavaScript, and required assets.
+
+Access EC2 Instance: Connect to the Windows Server EC2 instance using Remote Desktop Protocol (RDP).
+
+Install IIS: Install Internet Information Services (IIS) using Server Manager or PowerShell.
+
+Verify Web Server: Confirm that the IIS service is running and the website is configured.
+
+Deploy Application: Copy the application files into C:\inetpub\wwwroot\, replacing the default IIS landing page.
+
+Verify Locally: Open http://localhost in the Windows Server browser to confirm the application loads.
+
+Configure Access: Allow inbound HTTP traffic on port 80 in the EC2 security group.
+
+Access Website: Open the public IP in a browser to verify the deployed application.

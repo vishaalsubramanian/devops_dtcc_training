@@ -1,0 +1,22 @@
+Implementation:
+
+Created a custom Dockerfile using Ubuntu 22.04 as the base image.
+
+Built the initial Docker image with Vim, Wget, and Unzip.
+
+Ran a container and verified that the required utilities were installed.
+
+Modified the Dockerfile by removing Unzip and adding PHP CLI.
+
+Rebuilt the image with a new version tag and started a new container.
+
+Validation:
+
+Verified PHP, Vim, and Wget in the updated container.
+
+Confirmed that the Unzip executable was unavailable in the updated container.
+
+Captured screenshots of the Dockerfiles, image builds, and package verification outputs.
+
+Conclusion:
+Successfully demonstrated Docker image creation, container execution, Dockerfile modification, image rebuilding, and package verification.

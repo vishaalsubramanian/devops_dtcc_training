@@ -1,0 +1,41 @@
+Ubuntu EC2 Instance 
+
+Step
+
+Action
+
+Open EC2
+
+Go to the AWS Console → EC2 → Launch instance.
+
+Name instance
+
+Enter Ubuntu-Server.
+
+Select OS
+
+Choose Ubuntu Server LTS (64-bit x86).
+
+Instance type
+
+Select t3.small instance type.
+
+Key pair
+
+Create a new RSA key pair in .pem format and download it securely.
+
+Network settings
+
+Use the default VPC and a default subnet. Enable a public IP if you need direct SSH access.
+
+Security group
+
+Allow SSH (TCP port 22) from My IP only.
+
+Launch Instance
+
+Click Launch instance and wait until the instance is running and passes its status checks.
+
+Connect
+
+Select the instance → Connect → SSH client, then connect using the downloaded key or EC2 Instance Connect if supported.

@@ -1,0 +1,25 @@
+
+Objective: Provision and connect Windows Server and Ubuntu EC2 instances on AWS.
+
+Acceptance criteria:
+
+Launch an Ubuntu EC2 instance.
+
+Launch a Windows Server EC2 instance.
+
+Configure appropriate instance sizes, VPC settings, and security groups.
+
+Connect to Ubuntu using SSH.
+
+Connect to Windows using RDP.
+
+Record the instances' operating systems and private IP addresses.
+
+Demonstrate network communication between the two machines.
+
+Verify permitted and restricted network access.
+
+Document the setup and provide screenshots.
+
+Evidence: EC2 instance overview, security-group configuration, SSH connection, RDP connection, and connectivity-test results.
+

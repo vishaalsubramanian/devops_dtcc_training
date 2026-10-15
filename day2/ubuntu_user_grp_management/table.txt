@@ -1,0 +1,10 @@
+Item	Team Response	AI Question	AI Answer	Test	Expected Result	AI Correct?	Final Learning
+User Creation	Create two users	How to create users?	Use useradd	sudo useradd -m user1	User created	Yes	Manage users
+Group Creation	Create a group	How to create a group?	Use groupadd	sudo groupadd projectteam	Group created	Yes	Organize users
+Group Membership	Add users to group	How to add users?	Use usermod	sudo usermod -aG projectteam user1	User added	Yes	Manage groups
+Membership Verification	Check groups	How to verify membership?	Use id	id user1	Group displayed	Yes	Verify access
+Shared Directory	Create shared folder	How to share a directory?	Use mkdir	sudo mkdir /shared	Directory created	Yes	Share files
+Permissions	Configure access	How to set permissions?	Use chmod	sudo chmod 2770 /shared	Group access enabled	Yes	Control access
+Ownership	Assign group	How to set group ownership?	Use chown	sudo chown root:projectteam /shared	Group ownership updated	Yes	Manage ownership
+Sudo Control	Allow controlled admin access	How to grant limited sudo access?	Use visudo with a specific command rule	Configure a restricted rule	Only the approved command is allowed	Yes	Apply least privilege
+Access Testing	Test allowed and denied access	How to test permissions?	Use sudo -u	Test directory access as each user	Access follows permissions	Yes	Verify restrictions

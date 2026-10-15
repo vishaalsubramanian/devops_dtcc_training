@@ -1,0 +1,55 @@
+Summary: Practice 10 Additional Linux Commands
+
+Description
+
+Demonstrate additional Linux commands in Ubuntu to develop familiarity with system information, resource monitoring, network troubleshooting, and file searching. The commands must be different from those already covered in the previous Linux commands exercise.
+
+Tasks to perform
+
+Access an Ubuntu Linux terminal.
+
+Execute the following 10 commands. You may use files and folder names as per your convenience:
+
+uname -a — Display kernel and system information.
+
+hostname — Display the system hostname.
+
+date — Display the current date and time.
+
+uptime — Display system uptime and load averages.
+
+free -h — Display memory usage in a readable format.
+
+ip addr show — Display network interfaces and IP addresses.
+
+ping -c 4 8.8.8.8 — Test network connectivity.
+
+find /etc -name "*.conf" — Find configuration files ending in .conf.
+
+head -n 10 /etc/passwd — Display the first 10 lines of the file.
+
+tail -n 10 /etc/passwd — Display the last 10 lines of the file.
+
+Explain the purpose of each command and interpret its output.
+
+Capture terminal screenshots showing successful execution.
+
+Document any errors encountered and explain their possible causes.
+
+Acceptance Criteria
+
+At least 10 unique commands, excluding those covered in the previous exercise, are executed.
+
+The purpose of each command is documented.
+
+The terminal output is captured and explained.
+
+Network connectivity and system information commands are demonstrated.
+
+Evidence is attached to the Jira ticket.
+
+The task is ready for administrator review.
+
+Deliverables
+
+A short command-execution report, terminal screenshots, sample outputs, and a brief explanation of what was learned.

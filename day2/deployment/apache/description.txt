@@ -1,0 +1,17 @@
+Ubuntu EC2 — Static Web Application Deployment
+
+Obtain Source Code: Obtain the static application's source code, including HTML, CSS, JavaScript, and other required assets.
+
+Access EC2 Instance: Connect to the Ubuntu EC2 instance using SSH.
+
+Install Apache: Update package lists and install Apache using sudo apt update && sudo apt install apache2 -y.
+
+Verify Web Server: Start and enable Apache using sudo systemctl enable --now apache2.
+
+Deploy Application: Copy the application files into /var/www/html/, replacing the default Apache landing page.
+
+Verify Locally: Run curl http://localhost to confirm the application is served locally.
+
+Configure Access: Allow inbound HTTP traffic on port 80 in the EC2 security group.
+
+Access Website: Open public IP in a browser to verify the deployed application.

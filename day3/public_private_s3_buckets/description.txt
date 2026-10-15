@@ -1,0 +1,55 @@
+Summary: Create an S3 Bucket with Public and Private Objects and Verify Access
+
+Description:
+
+Create a single Amazon S3 bucket to demonstrate the difference between publicly accessible and privately accessible objects. Upload sample files, configure object access appropriately, and verify access from both authorized and unauthorized contexts.
+
+Tasks:
+
+Create one S3 bucket with a globally unique name.
+
+Upload two sample objects to the same bucket:
+
+Public object: An object that can be accessed without AWS authentication.
+
+Private object: An object restricted to authorized users.
+
+Review the S3 Block Public Access settings and configure access for the demonstration.
+
+Configure an appropriate bucket policy to permit public read access only to the designated public object.
+
+Ensure that public write and delete access are not granted.
+
+Keep the private object accessible only to authorized users through appropriate IAM permissions.
+
+Verify access using the object URLs in a browser:
+
+Public object — Accessible without AWS authentication.
+
+Private object — Access denied without authorization.
+
+Verify that an authorized user can access the private object.
+
+Document the access settings and remove public access after the demonstration if it is no longer required.
+
+Acceptance Criteria:
+
+One S3 bucket is created successfully.
+
+Both public and private sample objects are uploaded to the same bucket.
+
+The public object can be accessed without AWS authentication.
+
+The private object cannot be accessed anonymously.
+
+An authorized user can access the private object.
+
+Public write and delete permissions are not granted.
+
+Access permissions are configured to distinguish the two objects.
+
+Screenshots of bucket settings, object URLs, and access verification results are captured.
+
+Deliverable:
+
+Screenshots, bucket configuration details, sample object URLs, and access verification results.
