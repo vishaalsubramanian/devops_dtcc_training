@@ -1,0 +1,82 @@
+Step	Description to add	Screenshot evidence
+1. Understand SSH Keys	SSH uses a public-private key pair for secure authentication. The public key can be shared, while the private key must be kept confidential.	Public and private key explanation
+2. Generate SSH Key Pair	Generated a test SSH key pair consisting of a private key and a corresponding public key.	Key generation success
+3. OpenSSH to PPK Conversion	Imported the OpenSSH-compatible private key into PuTTYgen and saved it in PuTTY Private Key (.ppk) format.	PPK conversion in PuTTYgen
+4. PPK to OpenSSH Conversion	Loaded the .ppk file into PuTTYgen and exported the private key in an OpenSSH-compatible format.	Export success
+5. Understand Key Formats	PEM is a text-based encoding commonly used for OpenSSH-compatible keys and other cryptographic material. PPK is PuTTY's private-key format, used by PuTTY tools.	Key formats or saved filenames
+6. Validate SSH Authentication	Used the appropriate private key to establish an SSH connection to the target server and verified whether authentication succeeded.	Successful SSH login or connection output
+7. Security Verification	Ensured private-key contents were not exposed in screenshots and kept private-key files secure.	Screenshot showing filenames or settings, not key contents
+
+
+1. Public vs private key
+
+Private key: stays on your machine, never 
+
+shared. It proves you're you.
+
+Public key: goes on the server (~/.ssh/authorized_keys). Safe to share.
+
+On login, the server sends a challenge. Your client signs it with the private key, and the server verifies the signature with the public key. The private key never crosses the network.
+
+2. Get a test key pair
+
+ssh-keygen -t ed25519 -f ~/.ssh/test_key -C "test-key" -N ""
+
+
+This creates test_key (private) and test_key.pub (public). -N "" skips the passphrase for the demo; use one for real keys.
+
+Install puttygen if you don't have it:
+
+sudo apt install putty-tools      # Debian/Ubuntu
+brew install putty                # macOS
+# Windows: puttygen.exe ships with PuTTY
+
+
+3. OpenSSH → PPK
+
+puttygen ~/.ssh/test_key -o test_key.ppk -O private
+
+
+GUI alternative: PuTTYgen → Conversions → Import key → Save private key.
+
+4. PPK → OpenSSH
+
+puttygen test_key.ppk -O private-openssh-new -o test_key_back
+chmod 600 test_key_back
+puttygen test_key.ppk -O public-openssh -o test_key_back.pub
+
+
+GUI alternative: Load the .ppk → Conversions → Export OpenSSH key (force new file format).
+
+Check the round trip didn't change the key:
+
+ssh-keygen -lf ~/.ssh/test_key
+ssh-keygen -lf test_key_back
+puttygen test_key.ppk -O fingerprint
+
+
+All three fingerprints should match.
+
+5. Where PEM and PPK are used
+
+PEM: text format with -----BEGIN ... PRIVATE KEY----- headers. Used by OpenSSH, OpenSSL, AWS EC2 .pem downloads, and most Linux/macOS tooling and libraries. Strictly, modern OpenSSH writes BEGIN OPENSSH PRIVATE KEY (its own format), while -O private-openssh gives the older PEM-style one for RSA.
+
+PPK: PuTTY's own format. Used by PuTTY, Pageant, plink, WinSCP, and FileZilla. Same key underneath, just a different container.
+
+6. Validate over SSH
+
+Install the public key on a server (or localhost with openssh-server):
+
+ssh-copy-id -i ~/.ssh/test_key.pub user@host
+
+
+Test the round-tripped OpenSSH key:
+
+ssh -i test_key_back -o IdentitiesOnly=yes user@host "echo it works"
+
+
+Test the PPK via PuTTY's CLI:
+
+plink -i test_key.ppk user@host "echo it works"
+
+

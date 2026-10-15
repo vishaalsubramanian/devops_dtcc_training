@@ -1,0 +1,87 @@
+S. No.
+
+Command
+
+Purpose
+
+Sample Output / Interpretation
+
+1
+
+clear
+
+Clears the terminal screen.
+
+Terminal screen is cleared.
+
+2
+
+echo "Hello DevOps"
+
+Prints a message to the terminal.
+
+Hello DevOps
+
+3
+
+which bash
+
+Displays the path of the Bash executable.
+
+/usr/bin/bash
+
+4
+
+id
+
+Displays the current user's UID, GID, and group memberships.
+
+uid=1000(user) gid=1000(user) groups=1000(user),27(sudo)
+
+5
+
+groups
+
+Displays the groups associated with the current user.
+
+user sudo
+
+6
+
+stat /etc/passwd
+
+Displays file metadata, including permissions and ownership.
+
+Shows file size, permissions, owner, group, and timestamps.
+
+7
+
+file /etc/passwd
+
+Identifies the type of a file.
+
+/etc/passwd: ASCII text
+
+8
+
+wc -l /etc/passwd
+
+Counts the lines in the file.
+
+45 /etc/passwd
+
+9
+
+sort /etc/passwd
+
+Sorts file contents alphabetically.
+
+Displays the file entries in sorted order.
+
+10
+
+cut -d: -f1 /etc/passwd
+
+Extracts usernames from the first colon-separated field.
+
+root, daemon, bin, sys

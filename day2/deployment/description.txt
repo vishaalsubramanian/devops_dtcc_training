@@ -1,0 +1,47 @@
+Description
+
+Objective
+
+Deploy a static web application on an AWS EC2 instance using IIS on Windows Server and/or Apache on Ubuntu.
+
+Requirements
+
+Obtain the application's source code.
+
+Understand the static application structure.
+
+Provision or access the assigned AWS EC2 instance.
+
+Install and configure the appropriate web server.
+
+Deploy the application files.
+
+Verify successful deployment using localhost.
+
+Access the website using the appropriate EC2 address.
+
+Verify the HTTP response.
+
+Document the deployment steps.
+
+Capture evidence of successful deployment.
+
+Acceptance criteria
+
+The application source code is available.
+
+The selected web server is installed and running.
+
+The application is accessible over HTTP.
+
+The application is not merely showing the default IIS or Apache landing page.
+
+Deployment steps are documented.
+
+Successful execution is demonstrated.
+
+Supporting screenshots are attached.
+
+Deliverables
+
+Source-code repository reference, deployment screenshots, browser testing evidence, and a short deployment report.

@@ -1,0 +1,57 @@
+Description
+
+Summary: Practice 10 Additional Linux Commands
+
+Description
+
+Demonstrate 10 additional Linux commands in Ubuntu to develop familiarity with file permissions, text processing, disk management, running processes, and system administration. The commands must be different from those used in previous Linux command exercises.
+
+Tasks to Perform
+
+Access an Ubuntu Linux terminal.
+
+Execute the following 10 commands:
+
+clear — Clear the terminal screen.
+
+echo "Hello DevOps" — Print a message to the terminal.
+
+which bash — Display the path of the Bash executable.
+
+id — Display the current user's UID, GID, and group memberships.
+
+groups — Display the groups associated with the current user.
+
+stat /etc/passwd — Display file metadata, including permissions and ownership.
+
+file /etc/passwd — Identify the type of a file.
+
+wc -l /etc/passwd — Count the lines in the file.
+
+sort /etc/passwd — Display the contents sorted alphabetically.
+
+cut -d: -f1 /etc/passwd — Extract usernames from the password file.
+
+Explain the purpose of each command and interpret its output.
+
+Capture terminal screenshots showing successful execution.
+
+Document any errors encountered and explain their possible causes.
+
+Acceptance Criteria
+
+At least 10 unique commands, excluding previously covered commands, are executed.
+
+The purpose of each command is documented.
+
+Terminal outputs are captured and explained.
+
+User information, file metadata, and text-processing commands are demonstrated.
+
+Evidence is attached to the Jira ticket.
+
+The task is ready for administrator review.
+
+Deliverables
+
+A short command-execution report, terminal screenshots, sample outputs, and a brief explanation of what was learned.

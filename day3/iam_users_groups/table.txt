@@ -1,0 +1,223 @@
+Concept
+
+What it means
+
+IAM user
+
+An identity used by a person or application to access AWS.
+
+IAM group
+
+A collection of IAM users that can share permissions.
+
+IAM policy
+
+A JSON document defining allowed or denied actions on AWS resources.
+
+Least privilege
+
+Granting only the permissions necessary for a task.
+
+Access denied
+
+AWS prevents an operation when effective permissions do not authorize it.
+
+
+
+Item
+
+Team Response
+
+AI Question
+
+AI Answer
+
+Our Prediction
+
+Test
+
+Actual Result
+
+AI Correct?
+
+Final Learning
+
+IAM Group Creation
+
+Create an IAM group
+
+What is an IAM group?
+
+A group manages permissions for multiple IAM users.
+
+Expected the group to organize users.
+
+Create an IAM group.
+
+Group created successfully.
+
+Yes, if verified
+
+Learned to manage users collectively.
+
+IAM User Creation
+
+Create four IAM users
+
+How do we create IAM users?
+
+IAM allows individual identities to be created for team members.
+
+Expected four users to be created.
+
+Create four IAM users.
+
+Users appear in the IAM console.
+
+Yes, if verified
+
+Learned to create individual AWS identities.
+
+Read-Only Permissions
+
+Assign viewing access
+
+How can users view resources without modifying them?
+
+Attach an appropriate read-only policy.
+
+Expected viewing access without modification rights.
+
+Open a permitted resource.
+
+Resources are visible if authorized.
+
+Yes, if verified
+
+Learned to apply read-only permissions.
+
+S3 Permissions
+
+Grant bucket access
+
+How can users access a designated S3 bucket?
+
+Use a policy scoped to the training bucket.
+
+Expected access to permitted S3 resources only.
+
+List or open an authorized object.
+
+Access succeeds if permissions are correct.
+
+Yes, if verified
+
+Learned to control S3 access.
+
+EC2 Permissions
+
+Grant EC2 viewing access
+
+How can users view EC2 instances?
+
+Assign appropriate EC2 read-only permissions.
+
+Expected instance details to be visible.
+
+Open the EC2 Instances page.
+
+Instance information is displayed.
+
+Yes, if verified
+
+Learned to manage EC2 viewing permissions.
+
+Limited Administration
+
+Restrict administrative actions
+
+How can administration be limited?
+
+Use a custom policy scoped to approved actions and resources.
+
+Expected only approved operations to succeed.
+
+Test an authorized administrative action.
+
+The action succeeds if permitted.
+
+Yes, if verified
+
+Learned to follow least privilege.
+
+Group Membership
+
+Add users to groups
+
+How do we assign group permissions?
+
+Add users to the appropriate IAM groups.
+
+Expected group members to inherit group policies.
+
+Inspect group membership and attached policies.
+
+Membership and policies are displayed.
+
+Yes, if verified
+
+Learned to manage permissions through groups.
+
+Secure Sign-In
+
+Configure credentials and MFA
+
+How can IAM sign-in be secured?
+
+Use individual credentials and MFA where applicable.
+
+Expected secure individual access.
+
+Sign in using the assigned IAM identity.
+
+Sign-in succeeds if credentials are valid.
+
+Yes, if verified
+
+Learned to secure AWS identities.
+
+Permission Verification
+
+Test allowed and denied actions
+
+How do we verify permissions?
+
+Test both permitted and restricted operations.
+
+Expected allowed actions to succeed and unauthorized actions to fail.
+
+Perform one allowed and one restricted action per user.
+
+Results demonstrate the effective permissions.
+
+Yes, if verified
+
+Learned to validate access controls.
+
+10. Permission Cleanup
+
+Remove unnecessary access
+
+Why should unused permissions be removed?
+
+Unnecessary permissions increase security risk.
+
+Expected access to be reduced after testing.
+
+Review and remove unneeded policies or users.
+
+Unnecessary access is removed.
+
+Yes, if verified
+
+Learned to maintain secure IAM configurations.

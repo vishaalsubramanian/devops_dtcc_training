@@ -1,0 +1,59 @@
+Summary: Configure AWS IAM Users, Groups, and Role-Based Permissions
+
+Description:
+
+Demonstrate AWS Identity and Access Management (IAM) by creating user groups and multiple IAM users with different permissions. Each of the five team members will configure an IAM setup in their own AWS account and create four IAM users corresponding to the other teammates.
+
+The receiving teammates must sign in using their assigned IAM user credentials and verify that the intended permissions are enforced.
+
+Tasks:
+
+Each team member accesses their own AWS account.
+
+Use an appropriately secured administrative IAM identity to perform routine IAM configuration. Avoid using the root user for everyday administration.
+
+Create an IAM group for the exercise.
+
+Create four IAM users representing the other four teammates.
+
+Assign each user a different permission level using AWS-managed policies or appropriately scoped custom policies. Suggested examples:
+
+User 1 — Read-only: View permitted AWS resources without modifying them.
+
+User 2 — S3 access: List and access objects in a designated training bucket.
+
+User 3 — EC2 access: View EC2 instances and their configuration without modifying them.
+
+User 4 — Limited administration: Perform approved actions on designated training resources only.
+
+Add the users to the appropriate group or groups.
+
+Configure sign-in credentials securely and enable MFA where applicable.
+
+Share temporary sign-in instructions with the respective receiving teammates through a secure channel.
+
+Each receiving teammate signs in to the account using their assigned IAM user credentials.
+
+Test permitted and restricted actions and capture the results.
+
+Review and remove unnecessary permissions after testing.
+
+Acceptance Criteria:
+
+Each team member creates one IAM group in their own AWS account.
+
+Each team member creates four IAM users for the other teammates.
+
+The users are assigned the intended group memberships and policies.
+
+The receiving teammates successfully sign in using their IAM credentials.
+
+Each receiving teammate verifies at least one permitted action and one denied action.
+
+The team captures screenshots of group membership, policy assignments, and permission tests.
+
+No root credentials or long-term access keys are shared between teammates.
+
+Permissions follow the principle of least privilege and are restricted to the training resources.
+
+Deliverable: Screenshots of IAM groups, users, attached policies, successful sign-ins, and allowed/denied access tests, along with a brief verification report.

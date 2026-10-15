@@ -1,0 +1,17 @@
+S. No.	Linux Command	Purpose	Example Command	Expected Result
+1	pwd	Displays the current working directory.	pwd	Shows the current path, e.g., /home/ubuntu.
+2	ls	Lists files and directories in the current directory.	ls	Displays available files and folders.
+3	ls -la	Lists all files, including hidden files, with detailed information.	ls -la	Shows permissions, owner, size, and modification date.
+4	cd	Changes the current working directory.	cd /tmp	Navigates to the /tmp directory.
+5	mkdir	Creates a new directory.	mkdir linux_lab	Creates a directory named linux_lab.
+6	touch	Creates an empty file if it does not exist.	touch sample.txt	Creates sample.txt.
+7	cp	Copies files or directories.	cp sample.txt copy.txt	Creates a copy named copy.txt.
+8	mv	Moves or renames files and directories.	mv copy.txt renamed.txt	Renames copy.txt to renamed.txt.
+9	cat	Displays the contents of a file.	cat sample.txt	Prints the file contents in the terminal.
+10	grep	Searches for a specific pattern or text in a file.	grep "Linux" sample.txt	Displays lines containing Linux.
+11	chmod	Changes file permissions.	chmod 644 sample.txt	Sets read/write permissions for the owner and read-only permissions for the group and others.
+12	whoami	Displays the username of the current user.	whoami	Shows the current username, e.g., ubuntu.
+13	ps	Displays information about running processes.	ps	Shows processes associated with the current terminal.
+14	df -h	Displays filesystem disk usage in a human-readable format.	df -h	Shows total, used, and available disk space.
+15	du -sh	Displays the total disk usage of a directory.	du -sh /home/ubuntu	Shows the directory's total size.
+16	rm	Deletes files.	rm renamed.txt	Removes the specified file.

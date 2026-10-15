@@ -1,0 +1,65 @@
+Summary: Create Docker Containers and Troubleshoot MySQL
+
+Description
+
+Demonstrate Docker container creation and management using public images available on Docker Hub. Create a container with the required Linux utilities, run MySQL and PHP containers, and deploy a WordPress application with a MySQL database. Identify and troubleshoot errors encountered during MySQL container startup or database connectivity.
+
+Tasks to Perform
+
+Verify that Docker is installed and running on Ubuntu.
+
+Pull a suitable Ubuntu image from Docker Hub.
+
+Create and run an Ubuntu container.
+
+Install the following utilities inside the container:
+
+vim — Text editor.
+
+wget — Download files from the web.
+
+unzip — Extract ZIP archives.
+
+Verify that the utilities are installed successfully.
+
+Pull the required public images from Docker Hub:
+
+MySQL
+
+PHP
+
+WordPress
+
+Create and run containers using the required images.
+
+Deploy WordPress with a MySQL database using the appropriate environment variables, network configuration, and database credentials.
+
+Inspect container logs and identify any MySQL errors.
+
+Troubleshoot the errors, apply suitable fixes, and verify that the containers are running correctly.
+
+Capture terminal screenshots showing container creation, logs, troubleshooting, and successful execution.
+
+Acceptance Criteria
+
+An Ubuntu container is created and started successfully.
+
+The vim, wget, and unzip utilities are installed and verified.
+
+Public MySQL, PHP, and WordPress images are pulled from Docker Hub.
+
+Three application-related containers are configured as required for the exercise.
+
+MySQL errors are identified, documented, and investigated.
+
+WordPress and MySQL connectivity is verified where applicable.
+
+Container logs and relevant command outputs are captured.
+
+Evidence is attached to the Jira ticket.
+
+The task is ready for administrator review.
+
+Deliverables
+
+A short Docker practical report, Docker commands used, screenshots of running containers, MySQL error logs, troubleshooting steps, and verification results.

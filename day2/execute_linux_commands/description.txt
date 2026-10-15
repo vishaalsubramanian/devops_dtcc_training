@@ -1,0 +1,42 @@
+
+Description — Linux Commands
+
+Objective
+
+Understand and demonstrate essential Linux commands used in Ubuntu system administration.
+
+Tasks to perform
+
+Access an Ubuntu Linux terminal.
+
+Execute at least 10 different Linux commands.
+
+Explain the purpose of each command.
+
+Demonstrate file and directory operations.
+
+Demonstrate commands for inspecting system information.
+
+Capture terminal output showing successful execution.
+
+Document the commands and their results.
+
+Suggested commands
+
+pwd, ls, cd, mkdir, touch, cp, mv, cat, grep, chmod, whoami, ps, df, du, rm.
+
+Acceptance criteria
+
+At least 10 unique commands are executed successfully.
+
+The purpose of every command is explained.
+
+The terminal output is documented.
+
+Evidence is attached to the Jira ticket.
+
+The task is ready for administrator review.
+
+Deliverables
+
+A short command-execution report, terminal screenshots, and a brief explanation of what was learned.

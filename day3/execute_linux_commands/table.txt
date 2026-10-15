@@ -1,0 +1,109 @@
+S. No.
+
+Linux Command
+
+Purpose
+
+Example Command
+
+Expected Result
+
+1
+
+uname -a
+
+Displays kernel and system information.
+
+uname -a
+
+Shows kernel version, hostname, and system architecture.
+
+2
+
+hostname
+
+Displays the system hostname.
+
+hostname
+
+Shows the machine's hostname.
+
+3
+
+date
+
+Displays the current date and time.
+
+date
+
+Shows the system's current date, time, and timezone.
+
+4
+
+uptime
+
+Displays system uptime and load averages.
+
+uptime
+
+Shows how long the system has been running and its load averages.
+
+5
+
+free -h
+
+Displays memory usage in a human-readable format.
+
+free -h
+
+Shows total, used, and available memory and swap.
+
+6
+
+ip addr show
+
+Displays network interfaces and IP addresses.
+
+ip addr show
+
+Lists network interfaces and their assigned IP addresses.
+
+7
+
+ping -c 4 8.8.8.8
+
+Tests network connectivity to a public IP address.
+
+ping -c 4 8.8.8.8
+
+Sends four packets and reports responses and packet loss.
+
+8
+
+find /etc -name "*.conf"
+
+Searches for configuration files ending in .conf.
+
+find /etc -name "*.conf"
+
+Lists matching configuration files under /etc.
+
+9
+
+head -n 10 /etc/passwd
+
+Displays the first ten lines of the user account file.
+
+head -n 10 /etc/passwd
+
+Shows the first ten account entries.
+
+10
+
+tail -n 10 /etc/passwd
+
+Displays the last ten lines of the user account file.
+
+tail -n 10 /etc/passwd
+
+Shows the last ten account entries.

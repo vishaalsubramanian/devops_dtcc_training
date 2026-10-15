@@ -1,0 +1,49 @@
+Summary: Configure Hostinger Domain Routing Using AWS Route 53
+
+Description:
+
+Purchase a domain through Hostinger and configure AWS Route 53 to manage its DNS records. The objective is to connect the domain to an AWS-hosted resource and verify that domain resolution and routing work correctly.
+
+The task will be completed collaboratively by five team members.
+
+Tasks:
+
+Purchase or obtain access to a domain through Hostinger.
+
+Create a public hosted zone for the domain in AWS Route 53.
+
+Record the four Route 53 name servers assigned to the hosted zone.
+
+Update the domain's nameserver settings in Hostinger to use the Route 53 name servers.
+
+Configure the required DNS records:
+
+A record — Map the domain to an IPv4 address, such as an EC2 instance's public IPv4 address.
+
+CNAME record — Map a subdomain to another hostname, if required.
+
+Configure www routing if required.
+
+Ensure the AWS destination is running and reachable.
+
+Verify DNS resolution using nslookup or dig.
+
+Open the domain in a browser and confirm that it reaches the intended destination.
+
+Have all five teammates participate in configuration, testing, or documentation.
+
+Acceptance Criteria:
+
+A domain is available and managed through Hostinger.
+
+The Route 53 public hosted zone is configured correctly.
+
+Hostinger uses the assigned Route 53 name servers.
+
+DNS records point to the intended AWS resource.
+
+The domain resolves successfully and reaches the expected destination.
+
+Screenshots of the hosted zone, DNS records, and successful browser or DNS tests are captured.
+
+Deliverable: Screenshots, DNS configuration details, and verification outputs.

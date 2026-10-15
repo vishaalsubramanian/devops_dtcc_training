@@ -1,0 +1,12 @@
+Implementation Steps
+Created an S3 Bucket: Created a single Amazon S3 bucket with a globally unique name, enabled SSE-S3 encryption, and kept Object Ownership as Bucket owner enforced with ACLs disabled.
+
+Uploaded Sample Objects: Uploaded three files (public-demo.txt, private-demo.txt, and internal-only.txt) into the same S3 bucket to demonstrate different access permissions.
+
+Configured Public Access Settings: Reviewed S3 Block Public Access settings, retained ACL-related protections, and disabled the two bucket-policy-related blocking settings required for controlled public access.
+
+Applied Bucket Policy: Configured a bucket policy granting anonymous s3:GetObject permission exclusively to public-demo.txt, while keeping private-demo.txt and internal-only.txt restricted.
+
+Verified Access Permissions: Tested object URLs using an Incognito browser and AWS CLI. Verified that the public object returned HTTP 200 OK, while the private and internal-only objects returned HTTP 403 Access Denied. Confirmed that authorized IAM access succeeded and anonymous upload/delete operations were denied.
+
+Documented Results and Security Controls: Captured screenshots of bucket configurations, policies, object URLs, and access verification results. Reviewed permissions and included removal of temporary public access as the final cleanup step.

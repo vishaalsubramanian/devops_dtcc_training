@@ -1,0 +1,24 @@
+
+Objective: Demonstrate Ubuntu Linux user, group, and permission management.
+
+Acceptance criteria:
+
+Create at least two Linux users.
+
+Create at least one Linux group.
+
+Add users to groups.
+
+Verify group membership.
+
+Create a shared directory.
+
+Configure appropriate directory permissions.
+
+Demonstrate one controlled sudo-permission scenario.
+
+Test permitted and restricted access.
+
+Capture command outputs and explain the results.
+
+Deliverable: Screenshots and a short explanation of each administration scenario.
