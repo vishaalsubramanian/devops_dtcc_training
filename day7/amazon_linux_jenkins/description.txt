@@ -1,0 +1,13 @@
+Task Description: Jenkins Installation and Dashboard Setup on Red Hat (21-10-2026)
+
+Install and configure the required JDK on the provided Red Hat operating system.
+
+Install and configure Jenkins after verifying the JDK installation.
+
+Start and enable the Jenkins service using systemctl.
+
+Verify the Jenkins service status and running process using systemctl and ps -ef.
+
+Access the Jenkins dashboard through a web browser and complete the initial login using the administrator credentials.
+
+Verify that the Jenkins dashboard is accessible and functioning correctly.

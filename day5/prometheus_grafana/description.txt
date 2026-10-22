@@ -1,0 +1,96 @@
+Prometheus and Grafana Monitoring Setup
+Objective
+Deploy Prometheus, Node Exporter, and Grafana on separate Ubuntu EC2 instances to collect, monitor, and visualize Linux system metrics through a Grafana dashboard.
+
+Tasks to Perform
+Create Prometheus EC2 Instance
+
+Launch a new EC2 instance using an Ubuntu AMI.
+
+Install and configure Prometheus.
+
+Stop the running Prometheus service before editing its configuration.
+
+Update prometheus.yml to add the Node Exporter target.
+
+Restart Prometheus and verify that the service is running.
+
+Access the Prometheus web interface at http://<prometheus-public-ip>:9090.
+
+Create Node Exporter EC2 Instance
+
+Launch a second EC2 instance using an Ubuntu AMI.
+
+Install and start Node Exporter.
+
+Verify that Node Exporter is running and exposing metrics on port 9100.
+
+Configure security groups to allow Prometheus to access Node Exporter.
+
+Create Grafana EC2 Instance
+
+Launch a third EC2 instance using an Ubuntu AMI.
+
+Install and start Grafana.
+
+Access the Grafana web interface at http://<grafana-public-ip>:3000.
+
+Log in using the initial credentials, if applicable, and change the default password when prompted.
+
+Configure Prometheus as a Grafana Data Source
+
+Add Prometheus as a data source in Grafana.
+
+Configure the Prometheus server URL using the private IP address of the Prometheus EC2 instance, preferably over the private network.
+
+Test the data source connection and confirm successful communication.
+
+Import and Verify the Dashboard
+
+Import the Node Exporter Full dashboard into Grafana.
+
+Verify that the dashboard receives metrics from Prometheus.
+
+View live system metrics such as CPU utilization, memory usage, disk space, network traffic, and system load.
+
+Verify the Monitoring Setup
+
+Confirm that Prometheus is scraping metrics from Node Exporter.
+
+Verify that the Node Exporter target shows as UP in Prometheus.
+
+Confirm that Grafana dashboards display the collected system metrics.
+
+Capture screenshots of the Prometheus targets page and the Grafana dashboard.
+
+Acceptance Criteria
+Three Ubuntu EC2 instances are created for Prometheus, Node Exporter, and Grafana.
+
+Prometheus is installed, configured, and running successfully.
+
+Node Exporter is running and exposing system metrics.
+
+Prometheus successfully scrapes metrics from Node Exporter.
+
+Grafana is connected to Prometheus as a data source.
+
+The Node Exporter Full dashboard is imported successfully.
+
+Live system metrics are visible in Grafana.
+
+Screenshots and test results are documented for administrator review.
+
+Deliverables
+Prometheus, Node Exporter, and Grafana deployment.
+
+Working Grafana dashboard displaying Linux system metrics.
+
+Screenshots of Prometheus targets, data source configuration, and Grafana dashboard.
+
+Brief documentation of the configuration and verification results.
+
+Expected Learning
+Understand how Prometheus collects Linux system metrics through Node Exporter, how Grafana connects to Prometheus as a data source, and how monitoring dashboards provide real-time visibility into EC2 instance performance.
+
+Cleanup
+After completing the lab, stop or terminate the EC2 instances and remove any resources created specifically for this exercise, according to the lab requirements, to avoid unnecessary AWS charges.

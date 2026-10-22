@@ -1,0 +1,138 @@
+Started by an SCM change
+Obtained Jenkinsfile from git https://github.com/vishaalsubramanian/jenkins-mini-project-repo.git
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in /var/lib/jenkins/workspace/GitHub-AWS-CICD-Pipeline
+[Pipeline] {
+[Pipeline] timestamps
+[Pipeline] {
+[Pipeline] timeout
+[2026-10-21T10:33:07.590Z] Timeout set to expire in 10 min
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Checkout Code)
+[Pipeline] echo
+[2026-10-21T10:33:07.671Z] ======================================
+[Pipeline] echo
+[2026-10-21T10:33:07.683Z] STAGE 1: CHECKOUT FROM GITHUB
+[Pipeline] echo
+[2026-10-21T10:33:07.696Z] ======================================
+[Pipeline] checkout
+[2026-10-21T10:33:07.716Z] Selected Git installation does not exist. Using Default
+[2026-10-21T10:33:07.716Z] The recommended git tool is: NONE
+[2026-10-21T10:33:07.716Z] No credentials specified
+[2026-10-21T10:33:07.718Z]  > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/GitHub-AWS-CICD-Pipeline/.git # timeout=10
+[2026-10-21T10:33:07.722Z] Fetching changes from the remote Git repository
+[2026-10-21T10:33:07.724Z]  > git config remote.origin.url https://github.com/vishaalsubramanian/jenkins-mini-project-repo.git # timeout=10
+[2026-10-21T10:33:07.730Z] Fetching upstream changes from https://github.com/vishaalsubramanian/jenkins-mini-project-repo.git
+[2026-10-21T10:33:07.730Z]  > git --version # timeout=10
+[2026-10-21T10:33:07.734Z]  > git --version # 'git version 2.50.1'
+[2026-10-21T10:33:07.735Z]  > git fetch --tags --force --progress -- https://github.com/vishaalsubramanian/jenkins-mini-project-repo.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+[2026-10-21T10:33:08.390Z]  > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+[2026-10-21T10:33:08.394Z] Checking out Revision 0ee18125bf02c3c1b0d29760c11c99ac0bcb6322 (refs/remotes/origin/main)
+[2026-10-21T10:33:08.394Z]  > git config core.sparsecheckout # timeout=10
+[2026-10-21T10:33:08.397Z]  > git checkout -f 0ee18125bf02c3c1b0d29760c11c99ac0bcb6322 # timeout=10
+[2026-10-21T10:33:08.403Z] Commit message: "Updated to Version 2.2"
+[2026-10-21T10:33:08.404Z]  > git rev-list --no-walk 821e08be6f506d170a7071c096a08916fcb30007 # timeout=10
+[Pipeline] sh
+[2026-10-21T10:33:08.690Z] + git rev-parse --short HEAD
+[2026-10-21T10:33:08.690Z] 0ee1812
+[Pipeline] echo
+[2026-10-21T10:33:08.710Z] GitHub source code retrieved successfully
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Validate Website)
+[Pipeline] echo
+[2026-10-21T10:33:08.791Z] ======================================
+[Pipeline] echo
+[2026-10-21T10:33:08.803Z] STAGE 2: AUTOMATED TESTING
+[Pipeline] echo
+[2026-10-21T10:33:08.815Z] ======================================
+[Pipeline] sh
+[2026-10-21T10:33:09.085Z] + bash test.sh
+[2026-10-21T10:33:09.085Z] ========================================
+[2026-10-21T10:33:09.085Z]        AUTOMATED WEBSITE TESTING
+[2026-10-21T10:33:09.085Z] ========================================
+[2026-10-21T10:33:09.085Z] 
+[2026-10-21T10:33:09.085Z] TEST 1: Checking index.html
+[2026-10-21T10:33:09.085Z] 
+[2026-10-21T10:33:09.085Z] PASS: index.html exists
+[2026-10-21T10:33:09.085Z] 
+[2026-10-21T10:33:09.085Z] TEST 2: Checking file content
+[2026-10-21T10:33:09.085Z] 
+[2026-10-21T10:33:09.085Z] PASS: index.html is not empty
+[2026-10-21T10:33:09.085Z] 
+[2026-10-21T10:33:09.085Z] TEST 3: Validating website heading
+[2026-10-21T10:33:09.085Z] 
+[2026-10-21T10:33:09.085Z] PASS: Website heading found
+[2026-10-21T10:33:09.085Z] 
+[2026-10-21T10:33:09.085Z] TEST 4: Checking HTML document
+[2026-10-21T10:33:09.085Z] 
+[2026-10-21T10:33:09.085Z] PASS: HTML document structure verified
+[2026-10-21T10:33:09.085Z] 
+[2026-10-21T10:33:09.085Z] TEST 5: Checking version information
+[2026-10-21T10:33:09.085Z] 
+[2026-10-21T10:33:09.085Z] PASS: Application version found
+[2026-10-21T10:33:09.085Z] 
+[2026-10-21T10:33:09.085Z] ========================================
+[2026-10-21T10:33:09.085Z]          ALL TESTS PASSED
+[2026-10-21T10:33:09.085Z] ========================================
+[Pipeline] echo
+[2026-10-21T10:33:09.107Z] Website validation completed
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Deploy Website)
+[Pipeline] echo
+[2026-10-21T10:33:09.198Z] ======================================
+[Pipeline] echo
+[2026-10-21T10:33:09.210Z] STAGE 3: DEPLOYMENT
+[Pipeline] echo
+[2026-10-21T10:33:09.222Z] ======================================
+[Pipeline] sh
+[2026-10-21T10:33:09.494Z] + set -eu
+[2026-10-21T10:33:09.494Z] + echo 'Checking deployment permissions'
+[2026-10-21T10:33:09.494Z] Checking deployment permissions
+[2026-10-21T10:33:09.494Z] + test -w /var/www/html/index.html
+[2026-10-21T10:33:09.494Z] + echo 'Copying website to Apache'
+[2026-10-21T10:33:09.494Z] Copying website to Apache
+[2026-10-21T10:33:09.494Z] + cp index.html /var/www/html/index.html
+[2026-10-21T10:33:09.494Z] + echo 'Deployment completed'
+[2026-10-21T10:33:09.494Z] Deployment completed
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Verify Deployment)
+[Pipeline] echo
+[2026-10-21T10:33:09.630Z] ======================================
+[Pipeline] echo
+[2026-10-21T10:33:09.643Z] STAGE 4: DEPLOYMENT VERIFICATION
+[Pipeline] echo
+[2026-10-21T10:33:09.664Z] ======================================
+[Pipeline] sh
+[2026-10-21T10:33:09.936Z] + set -eu
+[2026-10-21T10:33:09.936Z] + curl -fsS http://127.0.0.1/index.html -o deployed.html
+[2026-10-21T10:33:09.936Z] + cmp index.html deployed.html
+[2026-10-21T10:33:09.936Z] + echo 'Deployed website matches source code'
+[2026-10-21T10:33:09.936Z] Deployed website matches source code
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Declarative: Post Actions)
+[Pipeline] echo
+[2026-10-21T10:33:10.029Z] ======================================
+[Pipeline] echo
+[2026-10-21T10:33:10.042Z] CI/CD PIPELINE SUCCESSFUL
+[Pipeline] echo
+[2026-10-21T10:33:10.054Z] ======================================
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // timeout
+[Pipeline] }
+[Pipeline] // timestamps
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS

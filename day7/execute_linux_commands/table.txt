@@ -1,0 +1,12 @@
+| No. | Command     | Practical purpose                             |
+| --- | ----------- | --------------------------------------------- |
+| 1   | `namei`     | Examine file-path permissions                 |
+| 2   | `readlink`  | Resolve symbolic links                        |
+| 3   | `getent`    | Retrieve user and system database information |
+| 4   | `findmnt`   | Inspect mounted filesystems                   |
+| 5   | `vmstat`    | Monitor CPU, memory, and I/O statistics       |
+| 6   | `ulimit`    | Examine process resource limits               |
+| 7   | `sha256sum` | Verify file integrity                         |
+| 8   | `sysctl`    | Inspect kernel parameters                     |
+| 9   | `timeout`   | Limit command execution time                  |
+| 10  | `tee`       | Save and display command output               |

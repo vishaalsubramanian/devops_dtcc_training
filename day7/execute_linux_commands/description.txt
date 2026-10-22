@@ -1,0 +1,70 @@
+Linux Commands:
+
+1. namei — Examine Permissions Along a File Path
+
+namei -l /etc/hosts
+
+Purpose: Displays every directory in a file's path along with its ownership and permissions.
+
+2. readlink — Resolve Symbolic Links
+
+readlink -f /bin/sh
+
+Purpose: Displays the actual file that a symbolic link ultimately points to.
+
+
+3. getent — Retrieve System Database Information
+
+getent passwd "$USER"
+
+Purpose: Retrieves information about your current Linux user from the system's configured account databases.
+
+
+4. findmnt — Examine Mounted Filesystems
+
+findmnt -T /home
+
+Purpose: Shows which filesystem contains /home, including its source, type, and mount point.
+
+
+5. vmstat — Monitor System Performance
+
+vmstat 1 5
+
+Purpose: Displays system performance statistics five times at one-second intervals.
+It includes information about memory, CPU, processes, swapping, and I/O.
+
+
+6. ulimit — Display Process Resource Limits
+
+ulimit -a
+
+Purpose: Displays resource limits applied to processes started from your shell.
+These include limits relating to open files, processes, memory, and stack size.
+
+
+7. sha256sum — Generate a File Checksum
+sha256sum /etc/hosts
+
+Purpose: Generates a SHA-256 checksum for the specified file.
+
+
+8. sysctl — Examine Linux Kernel Parameters
+
+sysctl vm.swappiness
+
+Purpose: Displays the current kernel swappiness setting, which influences the kernel's preference for swapping memory pages.
+
+
+9. timeout — Limit Command Execution Time
+
+timeout 3s sleep 10
+
+Purpose: Attempts to execute sleep 10, but stops it after three seconds.
+
+
+10. tee — Write Output to Both Terminal and File
+
+printf 'Linux DevOps Practical - Set 3\n' | tee ~/devops-practice.txt
+
+Purpose: Displays text in the terminal while simultaneously writing it to a file.

@@ -1,0 +1,41 @@
+
+
++------+--------------------------+-------------------------------------------------------------------------------------------+
+| No.  | Command                  | Description / purpose                                                                     |
++------+--------------------------+-------------------------------------------------------------------------------------------+
+| 1    | nproc                    | Shows the number of processing units available to the current process. Your output: 8     |
+|      |                          | logical CPUs.                                                                             |
++------+--------------------------+-------------------------------------------------------------------------------------------+
+| 2    | systemctl status ssh     | Shows the current state of the OpenSSH server service, including whether it is loaded,    |
+|      |                          | enabled, and running. Your output: ssh.service was inactive (dead); ssh.socket was listed |
+|      |                          | as its trigger.                                                                           |
++------+--------------------------+-------------------------------------------------------------------------------------------+
+| 3    | journalctl -u ssh        | Displays systemd journal messages associated with the SSH service; useful for checking    |
+|      |                          | startup failures and connection-related service events. Your output: -- No entries --.    |
++------+--------------------------+-------------------------------------------------------------------------------------------+
+| 4    | uptime                   | Shows the current time, how long Linux has been running, the number of logged-in users,   |
+|      |                          | and the 1-, 5-, and 15-minute system load averages. Your output showed roughly 2 minutes  |
+|      |                          | of uptime.                                                                                |
++------+--------------------------+-------------------------------------------------------------------------------------------+
+| 5    | lscpu                    | Displays CPU architecture and hardware details, such as architecture, cores, threads, CPU |
+|      |                          | model, and virtualization support. Your output showed x86_64 and 8 logical CPUs.          |
++------+--------------------------+-------------------------------------------------------------------------------------------+
+| 6    | lsblk                    | Lists block devices (disks/partitions), their sizes, types, and mount points. In your WSL |
+|      |                          | environment, it showed virtual disks and mounted filesystems, including Docker and WSL-   |
+|      |                          | related mounts.                                                                           |
++------+--------------------------+-------------------------------------------------------------------------------------------+
+| 7    | free -m                  | Displays used, free, and available RAM plus swap space, with sizes in MiB. Your output    |
+|      |                          | showed about 7.7 GiB of RAM and 2 GiB of swap.                                            |
++------+--------------------------+-------------------------------------------------------------------------------------------+
+| 8    | vmstat                   | Summarizes process scheduling, memory, swap, disk I/O, system activity, and CPU usage.    |
+|      |                          | Useful for spotting CPU, memory, and I/O pressure; a single invocation reports cumulative |
+|      |                          | averages since boot.                                                                      |
++------+--------------------------+-------------------------------------------------------------------------------------------+
+| 9    | hostnamectl              | Displays the hostname and system identity, including OS, kernel, architecture, and        |
+|      |                          | virtualization information. Your output identified Ubuntu 24.04.5 LTS running under WSL.  |
++------+--------------------------+-------------------------------------------------------------------------------------------+
+| 10   | dmesg                    | Displays kernel ring-buffer messages, such as boot information, driver initialization,    |
+|      |                          | and hardware/virtualization diagnostics. Your output contained Linux startup and          |
+|      |                          | Hyper-V/WSL kernel messages.                                                              |
++------+--------------------------+-------------------------------------------------------------------------------------------+
+

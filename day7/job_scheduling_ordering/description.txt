@@ -1,0 +1,11 @@
+Task Description: Job Creation, Ordering, and Scheduling
+
+Create three jobs named BuildJob, TestJob, and DeployJob.
+
+Configure the job execution order: BuildJob → TestJob → DeployJob.
+
+Verify the job execution sequence and workflow through the dashboard.
+
+Schedule the ordered job workflow to execute automatically every minute.
+
+Validate the scheduled execution and ensure all jobs run successfully in the configured order.

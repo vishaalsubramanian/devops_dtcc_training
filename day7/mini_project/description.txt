@@ -1,0 +1,13 @@
+Task Description: Mini Project – Jenkins and GitHub Integration (21-10-2026)
+
+Create a local Git repository for the mini project and initialize version control.
+
+Configure the remote GitHub repository and connect it to the local repository.
+
+Commit and push the project files to the remote GitHub repository.
+
+Configure a Jenkins job to connect to the GitHub repository and retrieve the project source code.
+
+Set up the job to trigger automatically whenever new changes are pushed to the GitHub repository.
+
+Test the integration by pushing changes to GitHub and verifying that Jenkins automatically

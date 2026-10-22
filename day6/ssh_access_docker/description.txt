@@ -1,0 +1,36 @@
+Issue Type: Task
+
+Summary: Configure SSH Access to a Docker Container for Developers
+
+Description:
+Build a custom Docker image with an SSH server, deploy a container on EC2, and enable developer access through a forwarded host port.
+
+Tasks:
+
+Create a Dockerfile based on Ubuntu 22.04.
+
+Install and configure OpenSSH Server.
+
+Build the custom Docker image.
+
+Run the container with host port 2323 mapped to container port 22.
+
+Configure the EC2 security group to allow SSH access from an authorized IP.
+
+Connect using PuTTY and verify container access.
+
+Inspect container status and logs.
+
+Acceptance Criteria:
+
+The custom SSH image builds successfully.
+
+The SSH container runs successfully.
+
+Host port 2323 forwards traffic to container port 22.
+
+An authorized SSH connection reaches the container shell.
+
+Container status and logs are verified.
+
+Security: Use SSH keys, a non-root account, and restricted access for any non-lab deployment.

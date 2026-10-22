@@ -1,0 +1,141 @@
+Started by user Vishaal Subramanian
+Obtained Jenkinsfile from git https://github.com/vishaalsubramanian/jenkins-mini-project-repo.git
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in /var/lib/jenkins/workspace/GitHub-AWS-CICD-Pipeline
+[Pipeline] {
+[Pipeline] timestamps
+[Pipeline] {
+[Pipeline] timeout
+[2026-10-21T10:07:02.108Z] Timeout set to expire in 10 min
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Checkout Code)
+[Pipeline] echo
+[2026-10-21T10:07:02.518Z] ======================================
+[Pipeline] echo
+[2026-10-21T10:07:02.535Z] STAGE 1: CHECKOUT FROM GITHUB
+[Pipeline] echo
+[2026-10-21T10:07:02.559Z] ======================================
+[Pipeline] checkout
+[2026-10-21T10:07:02.666Z] Selected Git installation does not exist. Using Default
+[2026-10-21T10:07:02.667Z] The recommended git tool is: NONE
+[2026-10-21T10:07:02.667Z] No credentials specified
+[2026-10-21T10:07:02.668Z] Cloning the remote Git repository
+[2026-10-21T10:07:02.669Z] Cloning repository https://github.com/vishaalsubramanian/jenkins-mini-project-repo.git
+[2026-10-21T10:07:02.670Z]  > git init /var/lib/jenkins/workspace/GitHub-AWS-CICD-Pipeline # timeout=10
+[2026-10-21T10:07:02.677Z] Fetching upstream changes from https://github.com/vishaalsubramanian/jenkins-mini-project-repo.git
+[2026-10-21T10:07:02.678Z]  > git --version # timeout=10
+[2026-10-21T10:07:02.683Z]  > git --version # 'git version 2.50.1'
+[2026-10-21T10:07:02.683Z]  > git fetch --tags --force --progress -- https://github.com/vishaalsubramanian/jenkins-mini-project-repo.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+[2026-10-21T10:07:03.352Z]  > git config remote.origin.url https://github.com/vishaalsubramanian/jenkins-mini-project-repo.git # timeout=10
+[2026-10-21T10:07:03.356Z]  > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+[2026-10-21T10:07:03.361Z] Avoid second fetch
+[2026-10-21T10:07:03.364Z]  > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+[2026-10-21T10:07:03.370Z] Checking out Revision 0675dc77b5dc2e1ea5ccbb4afa669b4f6213aeba (refs/remotes/origin/main)
+[2026-10-21T10:07:03.371Z]  > git config core.sparsecheckout # timeout=10
+[2026-10-21T10:07:03.379Z]  > git checkout -f 0675dc77b5dc2e1ea5ccbb4afa669b4f6213aeba # timeout=10
+[2026-10-21T10:07:03.390Z] Commit message: "Added Jenkins CI/CD pipeline"
+[2026-10-21T10:07:03.392Z] First time build. Skipping changelog.
+[Pipeline] sh
+[2026-10-21T10:07:03.741Z] + git rev-parse --short HEAD
+[2026-10-21T10:07:03.741Z] 0675dc7
+[Pipeline] echo
+[2026-10-21T10:07:03.777Z] GitHub source code retrieved successfully
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Validate Website)
+[Pipeline] echo
+[2026-10-21T10:07:03.921Z] ======================================
+[Pipeline] echo
+[2026-10-21T10:07:03.935Z] STAGE 2: AUTOMATED TESTING
+[Pipeline] echo
+[2026-10-21T10:07:03.949Z] ======================================
+[Pipeline] sh
+[2026-10-21T10:07:04.223Z] + bash test.sh
+[2026-10-21T10:07:04.223Z] ========================================
+[2026-10-21T10:07:04.223Z]        AUTOMATED WEBSITE TESTING
+[2026-10-21T10:07:04.223Z] ========================================
+[2026-10-21T10:07:04.223Z] 
+[2026-10-21T10:07:04.223Z] TEST 1: Checking index.html
+[2026-10-21T10:07:04.223Z] 
+[2026-10-21T10:07:04.223Z] PASS: index.html exists
+[2026-10-21T10:07:04.223Z] 
+[2026-10-21T10:07:04.223Z] TEST 2: Checking file content
+[2026-10-21T10:07:04.223Z] 
+[2026-10-21T10:07:04.223Z] PASS: index.html is not empty
+[2026-10-21T10:07:04.223Z] 
+[2026-10-21T10:07:04.223Z] TEST 3: Validating website heading
+[2026-10-21T10:07:04.223Z] 
+[2026-10-21T10:07:04.223Z] PASS: Website heading found
+[2026-10-21T10:07:04.223Z] 
+[2026-10-21T10:07:04.223Z] TEST 4: Checking HTML document
+[2026-10-21T10:07:04.223Z] 
+[2026-10-21T10:07:04.223Z] PASS: HTML document structure verified
+[2026-10-21T10:07:04.223Z] 
+[2026-10-21T10:07:04.223Z] TEST 5: Checking version information
+[2026-10-21T10:07:04.223Z] 
+[2026-10-21T10:07:04.223Z] PASS: Application version found
+[2026-10-21T10:07:04.223Z] 
+[2026-10-21T10:07:04.223Z] ========================================
+[2026-10-21T10:07:04.223Z]          ALL TESTS PASSED
+[2026-10-21T10:07:04.223Z] ========================================
+[Pipeline] echo
+[2026-10-21T10:07:04.248Z] Website validation completed
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Deploy Website)
+[Pipeline] echo
+[2026-10-21T10:07:04.381Z] ======================================
+[Pipeline] echo
+[2026-10-21T10:07:04.397Z] STAGE 3: DEPLOYMENT
+[Pipeline] echo
+[2026-10-21T10:07:04.417Z] ======================================
+[Pipeline] sh
+[2026-10-21T10:07:04.692Z] + set -eu
+[2026-10-21T10:07:04.692Z] + echo 'Checking deployment permissions'
+[2026-10-21T10:07:04.692Z] Checking deployment permissions
+[2026-10-21T10:07:04.692Z] + test -w /var/www/html/index.html
+[2026-10-21T10:07:04.692Z] + echo 'Copying website to Apache'
+[2026-10-21T10:07:04.692Z] Copying website to Apache
+[2026-10-21T10:07:04.692Z] + cp index.html /var/www/html/index.html
+[2026-10-21T10:07:04.692Z] + echo 'Deployment completed'
+[2026-10-21T10:07:04.692Z] Deployment completed
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Verify Deployment)
+[Pipeline] echo
+[2026-10-21T10:07:04.826Z] ======================================
+[Pipeline] echo
+[2026-10-21T10:07:04.841Z] STAGE 4: DEPLOYMENT VERIFICATION
+[Pipeline] echo
+[2026-10-21T10:07:04.856Z] ======================================
+[Pipeline] sh
+[2026-10-21T10:07:05.126Z] + set -eu
+[2026-10-21T10:07:05.126Z] + curl -fsS http://127.0.0.1/index.html -o deployed.html
+[2026-10-21T10:07:05.126Z] + cmp index.html deployed.html
+[2026-10-21T10:07:05.126Z] + echo 'Deployed website matches source code'
+[2026-10-21T10:07:05.126Z] Deployed website matches source code
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Declarative: Post Actions)
+[Pipeline] echo
+[2026-10-21T10:07:05.378Z] ======================================
+[Pipeline] echo
+[2026-10-21T10:07:05.393Z] CI/CD PIPELINE SUCCESSFUL
+[Pipeline] echo
+[2026-10-21T10:07:05.407Z] ======================================
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // timeout
+[Pipeline] }
+[Pipeline] // timestamps
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS

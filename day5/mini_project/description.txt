@@ -1,0 +1,142 @@
+Description — AWS Monitoring and Alerting Using CloudWatch, SNS, SQS, and EC2
+
+Objective
+
+Understand and demonstrate AWS monitoring and alerting by configuring CloudWatch alarms, SNS email notifications, and SQS message delivery based on EC2 CPU utilization.
+
+Tasks to Perform
+
+1. Configure SQS
+
+Create a new SQS queue.
+
+Send a test message to the queue and verify successful delivery.
+
+Receive and verify the message.
+
+2. Configure SNS
+
+Create a new SNS topic.
+
+Subscribe your personal email address to the topic.
+
+Confirm the email subscription.
+
+3. Launch an EC2 Instance
+
+Launch a new EC2 instance with the required configuration.
+
+Enable detailed (advanced) CloudWatch monitoring.
+
+Configure the instance with Docker, if required.
+
+4. Configure IAM Permissions
+
+Create an IAM role or policy with the minimum permissions required for SNS to publish messages to the SQS queue.
+
+Configure the SQS queue access policy to allow messages from the designated SNS topic.
+
+Verify the SNS-to-SQS integration.
+
+5. Subscribe SQS to SNS
+
+Add the SQS queue as a subscriber to the SNS topic.
+
+Send a test SNS message and verify that it reaches the SQS queue.
+
+6. Configure CloudWatch Alarm
+
+Create a CloudWatch alarm for EC2 CPU utilization greater than 10%.
+
+Configure the required metric period, evaluation criteria, and alarm action.
+
+Configure the alarm to publish notifications to the SNS topic.
+
+7. Generate CPU Load on EC2
+
+Pull a suitable Docker image and create a container.
+
+Start the container and generate controlled CPU load on the EC2 instance.
+
+Monitor CPU utilization in CloudWatch until the alarm condition is met.
+
+8. Verify Monitoring and Notifications
+
+Confirm that the CloudWatch alarm transitions to the ALARM state.
+
+Verify that an email notification is received.
+
+Verify that the corresponding notification message reaches the SQS queue.
+
+Capture screenshots of the CloudWatch alarm, email notification, and SQS message.
+
+9. Clean Up AWS Resources
+
+Delete all resources created for this exercise in the appropriate order:
+
+CloudWatch alarm.
+
+EC2 container and instance.
+
+SNS subscription and topic.
+
+SQS queue.
+
+CloudTrail resources created specifically for this lab, if any.
+
+S3 bucket created specifically for this lab, if any.
+
+IAM policies and roles created specifically for this lab.
+
+Verify that no unnecessary resources remain running or incur ongoing charges.
+
+Acceptance Criteria
+
+SQS queue is created and successfully tested.
+
+SNS email subscription is confirmed.
+
+EC2 instance is launched with detailed monitoring enabled.
+
+SNS successfully delivers messages to SQS.
+
+CloudWatch alarm is configured for CPU utilization above 10%.
+
+CPU load triggers the alarm.
+
+Email and SQS notifications are received and verified.
+
+Screenshots and test results are documented.
+
+All lab resources are cleaned up successfully.
+
+Deliverables
+
+AWS monitoring and alerting configuration.
+
+Screenshots of the CloudWatch alarm, email notification, and SQS message.
+
+Brief documentation of the test results.
+
+Confirmation of resource cleanup.
+
+Expected Learning
+
+Understand how AWS CloudWatch monitors EC2 performance, how alarms trigger SNS notifications, how SNS delivers messages to SQS, and how IAM policies control communication between AWS services.
+
+
+
+
+Create and test an SQS queue and an SNS topic with a confirmed email subscription.
+
+Launch an EC2 instance with detailed CloudWatch monitoring enabled.
+
+Configure IAM permissions and integrate SNS with SQS for message delivery.
+
+Create a CloudWatch alarm for EC2 CPU utilization exceeding 10% and configure SNS notifications.
+
+Generate CPU load on EC2 using Docker and verify alarm activation, email alerts, and SQS messages.
+
+Capture screenshots and document the test results.
+
+Delete all lab resources and verify that no unnecessary resources or ongoing charges remain.

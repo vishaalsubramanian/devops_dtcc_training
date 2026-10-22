@@ -1,0 +1,15 @@
+Connect to the Ubuntu EC2 instance using SSH or PuTTY.
+
+Check the operating system version using lsb_release -a.
+
+Check disk capacity and available space using df -h.
+
+Check RAM and swap usage using free -h.
+
+Monitor CPU and memory utilization using top.
+
+Install Nginx and verify its configuration using sudo nginx -t.
+
+Check the Nginx service status and confirm that port 80 is listening.
+
+Test the HTTP response using curl and inspect Nginx access and error logs.

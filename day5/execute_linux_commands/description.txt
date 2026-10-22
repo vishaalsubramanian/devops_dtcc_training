@@ -1,0 +1,87 @@
+S. No.
+
+Command
+
+Purpose
+
+Category
+
+1
+
+find
+
+Searches for files and directories.
+
+File search
+
+2
+
+head
+
+Displays the first lines of a file.
+
+File viewing
+
+3
+
+tail
+
+Displays the last lines of a file.
+
+File viewing
+
+4
+
+less
+
+Views a text file one screen at a time.
+
+File viewing
+
+5
+
+sort
+
+Sorts lines of text.
+
+Text processing
+
+6
+
+wc
+
+Counts lines, words, and bytes.
+
+Text processing
+
+7
+
+history
+
+Displays previously executed shell commands.
+
+Shell management
+
+8
+
+id
+
+Displays user ID, group ID, and group memberships.
+
+User management
+
+9
+
+free -h
+
+Displays RAM and swap usage.
+
+System information
+
+10
+
+systemctl status ssh
+
+Checks the status of the SSH service.
+
+Service management

@@ -1,0 +1,21 @@
+Description
+
+Create a named Docker volume using docker volume create my-vol.
+
+List the available volumes using docker volume ls.
+
+Inspect the volume using docker volume inspect my-vol to identify its mount point.
+
+Create a container and attach the volume to /data using the --mount option.
+
+Create sample files inside the mounted volume and verify their contents.
+
+Inspect the container to confirm that the volume is mounted correctly.
+
+Delete the container without deleting the volume.
+
+Create a new container using the same volume and verify that the files persist.
+
+Create a compressed backup archive of the volume contents.
+
+Verify the backup archive by listing its contents

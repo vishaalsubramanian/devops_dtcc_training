@@ -1,0 +1,24 @@
+Enable logging of management events in AWS CloudTrail.
+Complete Day - 5 Task - 3 and then add screenshots of logs of management events that occurred by performing Task - 3 activities.
+
+STEPS:
+
+Open the AWS CloudTrail console.
+
+Select the trail named trail_day_5.
+
+Verify that logging is enabled and management events are configured.
+
+Open Event history from the left navigation.
+
+Perform AWS activities such as viewing EC2 instances or S3 buckets.
+
+Filter events by event source, such as ec2.amazonaws.com.
+
+Open an event to view its details and JSON record.
+
+Capture screenshots of the trail configuration, management event history, and event details.
+
+Save the screenshots as documentation for Day 5 – Task 3.
+
+Upload the screenshots to the appropriate GitHub branch or shared folder.

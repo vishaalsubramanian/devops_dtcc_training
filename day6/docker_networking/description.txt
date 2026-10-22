@@ -1,0 +1,40 @@
+Issue Type: Task
+
+Summary: Configure Docker Networks and Verify Container Communication
+
+Description:
+Explore Docker network configurations on EC2, establish communication between containers on a custom bridge network, and verify port usage differences between bridge and host networking.
+
+Tasks:
+
+List existing Docker networks.
+
+Create two containers on the default bridge network and inspect their configuration.
+
+Create a custom bridge network named akshiv_net.
+
+Connect two containers to the custom network.
+
+Verify container-to-container communication using container names.
+
+Run Nginx and Apache containers using the same internal port.
+
+Test host port publishing using different host ports.
+
+Compare bridge networking with host networking and inspect any port conflicts.
+
+Clean up the test containers and custom network.
+
+Acceptance Criteria:
+
+Existing Docker networks are inspected.
+
+The custom bridge network is created successfully.
+
+Containers communicate by name on the custom network.
+
+Multiple containers can use the same internal port on separate bridge-network namespaces.
+
+Host port mappings and host-network port conflicts are demonstrated and documented.
+
+Test resources are cleaned up after verification.

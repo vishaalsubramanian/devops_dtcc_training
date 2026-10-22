@@ -1,0 +1,36 @@
+Issue Type: Task
+
+Summary: Build and Push a Custom Docker Image to Docker Hub
+
+Description:
+Build a custom Docker image from a Dockerfile, tag it for a Docker Hub repository, publish it, and verify that the published image can be pulled successfully.
+
+Tasks:
+
+Create or reuse a custom Dockerfile.
+
+Build the image with an appropriate name and version tag.
+
+Inspect the locally available image.
+
+Authenticate with Docker Hub.
+
+Tag the image using the Docker Hub username and repository name.
+
+Push the image to Docker Hub.
+
+Pull the published image and verify its availability.
+
+Acceptance Criteria:
+
+The custom Docker image builds successfully.
+
+The image name and version tag are verified.
+
+Authentication with Docker Hub succeeds.
+
+The image is published to the intended repository.
+
+The published image can be pulled successfully.
+
+No passwords, tokens, or private keys are included in the image.
