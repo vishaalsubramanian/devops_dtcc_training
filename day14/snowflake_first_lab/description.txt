@@ -1,0 +1,18 @@
+Task: Set Up Snowflake and Stage Retail Sales CSV
+
+Description:
+Set up a Snowflake workspace for a retail sales dataset. Create the required database objects, upload the CSV to an internal stage, and configure the warehouse to avoid unnecessary credit usage.
+
+Tasks:
+1. Create a SQL worksheet, RETAIL_LAB_DB database, and RAW schema.
+2. Create an X-Small warehouse (RETAIL_LAB_WH) with 60-second auto-suspend.
+3. Prepare a retail sales CSV with orders, customers, products, prices, and cities.
+4. Create the RETAIL_ORDERS table and RETAIL_CSV_FORMAT file format.
+5. Create RETAIL_STAGE, upload the CSV, and verify the file using LIST.
+6. Disable warehouse auto-resume when not in use and confirm it is suspended.
+
+Expected Result:
+Database, schema, table, file format, and stage created; CSV uploaded and verified; warehouse left suspended to limit credit usage.
+
+Evidence:
+Attach screenshots of the SQL commands, successful results, staged CSV, and warehouse status.

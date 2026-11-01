@@ -1,0 +1,4 @@
+ALTER WAREHOUSE RETAIL_LAB_WH SUSPEND;
+-- Optional additional safety: prevent future queries from auto-starting it.
+ALTER WAREHOUSE RETAIL_LAB_WH SET AUTO_RESUME = FALSE;
+SHOW WAREHOUSES LIKE 'RETAIL_LAB_WH';

@@ -1,0 +1,46 @@
+Task: Practice Linux Terminal Utilities and Log File Analysis
+Issue Type: Task
+Technology: Ubuntu Linux, Bash
+
+Description:
+Practice installing and running Linux command-line utilities, then use a command pipeline to identify recently modified log files and inspect their sizes.
+
+Commands to Perform:
+
+1. sudo apt-get install fortune
+   Install the fortune utility (provided by fortune-mod on Ubuntu).
+
+2. fortune
+   Display a random quote in the terminal.
+
+3. sudo apt-get install telnet-ssl
+   Install the Telnet client.
+
+4. telnet towel.blinkenlights.nl
+   Connect to a public Telnet ASCII-art demonstration.
+
+5. sudo apt-get install cmatrix
+   Install the Matrix-style terminal animation.
+
+6. cmatrix
+   Run the animation; exit with Ctrl+C.
+
+7. cal
+   Display the current month's calendar.
+
+8. sudo apt install cowsay
+   Install the ASCII speech-bubble utility.
+
+9. cowsay Hello Vishaal
+   Print a message using ASCII-art output.
+
+10. find /var/log -type f -mtime -30 -name "*.log" -print0 2>/dev/null | xargs -0 du -b 2>/dev/null | sort -nr | head -n 5 | awk '{print $2}' | xargs -I {} sh -c 'echo -n "{} : "; du -h "{}" | cut -f1'
+    Find log files modified in the last 30 days, select the five largest by byte size, and display their readable sizes.
+
+Expected Result:
+- Utilities installed and executed successfully.
+- Terminal output captured for each activity.
+- Top five matching log files displayed with their sizes.
+
+Evidence:
+Attach screenshots of the commands and their terminal results to the Jira ticket.
