@@ -1,0 +1,21 @@
+Title: Implement and Explore CI Automation Using GitHub Actions
+
+Issue Type: Task  
+Technology: GitHub Actions, Git, GitHub, YAML
+
+Description:
+Set up and explore a Continuous Integration (CI) workflow using GitHub Actions to automate code execution and testing. Understand workflow configuration, triggers, jobs, runners, and execution logs.
+
+Tasks to Perform:
+1. Create a sample project and initialize a Git repository.
+2. Configure a GitHub Actions workflow using `.github/workflows/ci.yml`.
+3. Define workflow triggers for push, pull request, and manual execution.
+4. Configure GitHub-hosted runners, jobs, and execution steps.
+5. Push the project to GitHub and verify automatic workflow execution.
+6. Examine successful workflow runs and execution logs.
+7. Introduce an intentional error to observe workflow failure.
+8. Debug and resolve the error, then verify successful execution.
+9. Explore manual workflow triggering and pull-request-based CI checks.
+
+Expected Outcome:
+Successfully demonstrate GitHub Actions CI automation, including workflow execution, automated testing, failure detection, debugging, and successful re-execution.

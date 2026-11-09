@@ -1,0 +1,52 @@
+10 Linux Commands:
+
+
+mkfifo
+
+Creates named pipes for inter-process communication
+
+
+inotifywait
+
+Monitors filesystem events in real time
+
+
+setfacl
+
+Configures advanced file permissions using access control lists
+
+
+fuser
+
+Identifies processes accessing files or network ports
+
+
+jq
+
+Filters, extracts, and transforms JSON data
+
+
+dig
+
+Performs detailed DNS queries and troubleshooting
+
+
+openssl
+
+Inspects TLS connections, certificates, and cryptographic information
+
+
+readelf
+
+Examines the internal structure of Linux executable files
+
+
+ldd
+
+Identifies shared library dependencies of executable programs
+
+
+tcpdump
+
+Captures and analyzes network packets
+

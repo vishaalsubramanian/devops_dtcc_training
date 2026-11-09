@@ -1,0 +1,1 @@
+Analyze the first dataset using 7 unique SQL queries, covering joins, filtering, aggregation, sorting, subqueries, and other SQL operations.

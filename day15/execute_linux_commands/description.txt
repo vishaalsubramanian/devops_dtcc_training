@@ -1,0 +1,67 @@
+Day 15 Linux Commands:
+
+Objective:
+
+Practice 10 commands for understanding mounted filesystems, disk identification, file
+attributes, sparse files, swap, memory layout, and I/O performance.
+
+Setup:
+
+mkdir -p ~/linux_training/day15 && cd ~/linux_training/day15
+printf 'Safe storage diagnostics test file\n' > test.txt
+
+Package to be installed:
+
+Install tools if missing: sudo apt update && sudo apt install -y sysstat ncdu
+
+Linux Commands:
+
+01. mount
+    Run      : mount | head -n 12
+    Purpose  : List currently mounted filesystems and their mount options.
+    Expected : Shows mounted filesystems such as / and virtual or WSL mounts.
+
+02. blkid
+    Run      : sudo blkid
+    Purpose  : Read filesystem UUID, label, and format information from block devices.
+    Expected : Displays discovered devices; WSL may report very few or none.
+
+03. lsattr
+    Run      : lsattr test.txt
+    Purpose  : Inspect extended file attributes such as immutable/append-only flags.
+    Expected : Shows an attribute flag string for test.txt.
+
+04. fallocate
+    Run      : fallocate -l 4M allocated.img
+    Purpose  : Allocate actual disk space to a small four-megabyte test file.
+    Expected : Creates allocated.img with approximately 4 MiB allocated.
+
+05. truncate
+    Run      : truncate -s 4M sparse.img
+    Purpose  : Set file length without necessarily allocating all data blocks.
+    Expected : Creates a sparse 4 MiB file, often using much less disk space.
+
+06. swapon
+    Run      : swapon --show
+    Purpose  : List active swap devices or files and their capacity.
+    Expected : Shows swap usage; an empty table means no active swap.
+
+07. lsmem
+    Run      : lsmem
+    Purpose  : Inspect online/offline physical memory block ranges.
+    Expected : Shows memory blocks on supported kernels; WSL may limit details.
+
+08. lsns
+    Run      : lsns -t mnt
+    Purpose  : Inspect mount namespaces, useful for understanding process isolation.
+    Expected : Lists mount namespace IDs, processes, and command names.
+
+09. iostat
+    Run      : iostat -xz 1 2
+    Purpose  : Inspect CPU and disk I/O utilization in two samples one second apart.
+    Expected : Displays read/write throughput, queueing, and utilization metrics.
+
+10. ncdu
+    Run      : ncdu -x .
+    Purpose  : Explore directory disk consumption interactively, staying on one filesystem.
+    Expected : Shows a navigable size summary for this lab directory; press q to exit.

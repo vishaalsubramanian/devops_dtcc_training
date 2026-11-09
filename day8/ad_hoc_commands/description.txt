@@ -1,0 +1,23 @@
+Issue Type: Task
+Priority: Medium
+Technology: Ansible, SUSE Linux, AWS EC2
+
+Description:
+
+Set up an Ansible environment using SUSE Linux and explore ad-hoc commands for managing remote servers.
+
+Establish connectivity between the Ansible controller and managed nodes, perform basic system administration activities, and understand how Ansible automates operations across remote machines.
+
+Tasks to Perform:
+
+1. Configure the Ansible controller and managed nodes.
+2. Set up inventory and establish SSH connectivity.
+3. Execute ad-hoc commands to retrieve system information and check server health.
+4. Perform package installation and service management.
+5. Install and configure Nginx on managed nodes.
+6. Explore remote file management and user administration.
+7. Verify successful execution and document the results.
+
+Expected Outcome:
+
+Demonstrate remote server administration and automation using Ansible ad-hoc commands.

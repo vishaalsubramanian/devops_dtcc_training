@@ -1,0 +1,72 @@
+Day 13 Linux Commands:
+
+Objective:
+
+Practice 10 commands to investigate listeners, test HTTP endpoints,
+inspect ports, understand CIDR networks, and create a lab-only SSH key.
+
+Setup:
+
+mkdir -p ~/linux_training/day13 && cd ~/linux_training/day13
+python3 -m http.server 8765 --bind 127.0.0.1 > http_server.log 2>&1 &
+SERVER_PID=$!
+# Keep this terminal open. The sample server listens only on localhost.
+
+Packages to be installed:
+
+Install missing tools (as needed): sudo apt update && sudo apt install -y curl wget
+netcat-openbsd nmap ipcalc openssh-client traceroute whois
+
+Linux Commands:
+
+01. ss
+    Run      : ss -ltn
+    Purpose  : Inspect local listening TCP sockets and their bound ports.
+    Expected : The sample server should appear on 127.0.0.1:8765.
+
+02. curl
+    Run      : curl -I http://127.0.0.1:8765/
+    Purpose  : Send an HTTP HEAD request to a locally hosted test service.
+    Expected : Shows an HTTP response status and response headers.
+
+03. wget
+    Run      : wget --spider http://127.0.0.1:8765/
+    Purpose  : Check an HTTP resource without downloading its contents.
+    Expected : Reports that the local resource exists or shows the HTTP error.
+
+04. nc
+    Run      : nc -vz 127.0.0.1 8765
+    Purpose  : Probe whether a specific local TCP port accepts a connection.
+    Expected : Reports a successful connection to the test server port.
+
+05. nmap
+    Run      : nmap -sT -p 8765 127.0.0.1
+    Purpose  : Scan a single TCP port on your own localhost machine.
+    Expected : Reports port 8765 as open while the local server is running.
+
+06. ipcalc
+    Run      : ipcalc 10.0.10.0/24
+    Purpose  : Calculate network address, mask, usable range and broadcast address.
+    Expected : Displays subnet information for a sample private network.
+
+07. ssh
+    Run      : ssh -V
+    Purpose  : Inspect the installed OpenSSH client version without connecting.
+    Expected : Displays the OpenSSH version string.
+
+08. ssh-keygen
+    Run      : ssh-keygen -q -t ed25519 -N "" -f "$PWD/lab_ed25519"
+    Purpose  : Generate a disposable SSH test key pair locally.
+    Expected : Creates lab_ed25519 and lab_ed25519.pub in this lab folder.
+
+09. traceroute
+    Run      : traceroute -m 5 -w 1 1.1.1.1
+    Purpose  : Trace network hops towards a public IP with a low hop and wait limit.
+    Expected : Shows route hops; timeouts are possible on WSL or restricted networks.
+
+10. whois
+    Run      : whois example.com
+    Purpose  : Look up publicly available domain registration / registry information.
+    Expected : Shows registry information when outbound WHOIS traffic is allowed.
+
+

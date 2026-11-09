@@ -1,0 +1,19 @@
+Title: Implement Blue/Green Deployment Using AWS Elastic Beanstalk
+Issue Type: Task
+Priority: Medium
+Technology: AWS Elastic Beanstalk, EC2, IAM
+
+Description:
+Set up and test a Blue/Green deployment strategy using AWS Elastic Beanstalk. Deploy an initial application version, prepare and validate an updated version in a separate environment, and switch traffic without directly replacing the running application.
+
+Tasks to Perform:
+1. Create and configure an Elastic Beanstalk application and Blue environment.
+2. Deploy and verify the initial application version.
+3. Clone the environment to create Green and deploy the updated version.
+4. Check application health and confirm both environments work independently.
+5. Swap environment URLs and verify the updated version is live.
+6. Test rollback to the previous version and review deployment events.
+7. Capture results and clean up unused AWS resources.
+
+Expected Outcome:
+Demonstrate a successful Blue/Green deployment, traffic switch, and rollback using AWS Elastic Beanstalk.

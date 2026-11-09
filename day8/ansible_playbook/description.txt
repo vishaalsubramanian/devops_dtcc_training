@@ -1,0 +1,23 @@
+Issue Type: Task
+Priority: Medium
+Technology: Ansible, YAML, SUSE Linux, Nginx
+
+Description:
+
+Develop and execute Ansible playbooks to automate package installation, service configuration, and file deployment on managed servers.
+
+Explore conditional execution and task-level tags to selectively execute or skip specific operations within a playbook.
+
+Tasks to Perform:
+
+1. Create and configure Ansible playbooks for remote server management.
+2. Automate package installation and Nginx configuration.
+3. Deploy sample web content to managed servers.
+4. Implement conditional execution based on operating system information.
+5. Configure task tags to control playbook execution.
+6. Explore selective execution and skipping of tagged tasks.
+7. Validate playbook execution and verify the expected results.
+
+Expected Outcome:
+
+Successfully automate server configuration using Ansible playbooks with conditional logic and selective task execution.

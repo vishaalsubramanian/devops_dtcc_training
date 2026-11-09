@@ -1,0 +1,66 @@
+Day 10 Linux Commands:
+
+Objective:
+
+Practice 10 new utilities used for preparing backups, restoring files, synchronizing
+folders, and handling paths safely.
+
+Setup:
+
+mkdir -p ~/linux_training/day10/data && cd ~/linux_training/day10
+printf 'Backup practice - line one\nBackup practice - line two\n' > data/notes.txt
+printf 'version=1\nenvironment=lab\n' > data/settings.conf
+sudo apt install -y zip unzip rsync
+
+Linux Commands:
+
+01. tar
+    Run      : tar -czf project_backup.tar.gz data/
+    Purpose  : Create a gzip-compressed TAR archive containing the practice directory.
+    Expected : A project_backup.tar.gz archive appears; original files stay unchanged.
+
+02. gzip
+    Run      : gzip -kc data/notes.txt > notes.txt.gz
+    Purpose  : Compress a file to standard output, leaving the original intact.
+    Expected : Produces notes.txt.gz without removing data/notes.txt.
+
+03. gunzip
+    Run      : gunzip -c notes.txt.gz > recovered_notes.txt
+    Purpose  : Decompress a gzip stream without deleting the compressed file.
+    Expected : Restores the original content into recovered_notes.txt.
+
+04. zip
+    Run      : zip -r project_backup.zip data/
+    Purpose  : Create a ZIP archive from the practice directory.
+    Expected : Produces project_backup.zip containing both example files.
+
+05. unzip
+    Run      : unzip -l project_backup.zip
+    Purpose  : Inspect the contents of a ZIP without extracting them.
+    Expected : Lists archived names, lengths, and timestamps.
+
+06. rsync
+    Run      : rsync -av --dry-run data/ mirror/
+    Purpose  : Preview which files would be copied during directory synchronization.
+    Expected : Shows a transfer plan without making actual changes.
+
+07. ln
+    Run      : ln -s data/notes.txt notes_link.txt
+    Purpose  : Create a symbolic link to a file within the practice folder.
+    Expected : Creates notes_link.txt pointing to data/notes.txt.
+
+08. realpath
+    Run      : realpath notes_link.txt
+    Purpose  : Resolve a relative or symbolic-link path to an absolute canonical path.
+    Expected : Displays the absolute path to the original notes.txt.
+
+09. basename
+    Run      : basename /var/log/syslog
+    Purpose  : Extract the file-name component of a full path.
+    Expected : Prints syslog; the file need not exist for this example.
+
+10. dirname
+    Run      : dirname /var/log/syslog
+    Purpose  : Extract the parent-directory portion of a full path.
+    Expected : Prints /var/log.
+

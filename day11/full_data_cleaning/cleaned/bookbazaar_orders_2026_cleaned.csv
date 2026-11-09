@@ -1,0 +1,85 @@
+Order_ID,Customer_ID,Customer_Name,Product_ID,Product,Category,Brand,Quantity,Unit_Price,Discount_Percent,Shipping_Cost,Payment_Method,Order_Date,Ship_Date,Delivery_Status,City,Region,Rating,Return_Status
+ORD0001,C212,Customer 212,B001,Python for Beginners,Technology,BrightInk,2,799.0,10.0,60.0,Credit Card,2026-01-17,2026-01-19,Delivered,Bhubaneswar,East,4.0,No
+ORD0002,C216,Customer 216,B012,Adventure Storybook,Children,LittleLeaf,1,249.0,15.0,40.0,UPI,2026-01-07,2026-01-12,Delivered,Chennai,South,4.0,No
+ORD0003,C221,Customer 221,B009,The Lost Map,Fiction,PageCraft,1,349.0,10.0,0.0,Credit Card,2026-01-08,2026-01-13,Delivered,Chennai,South,4.0,No
+ORD0004,C209,Customer 209,B002,Introduction to Data Science,Technology,NorthStar,1,999.0,0.0,50.0,UPI,2026-01-03,2026-01-09,Delivered,Chennai,South,5.0,No
+ORD0005,C206,Customer 206,B001,Python for Beginners,Technology,BrightInk,3,799.0,15.0,30.0,Credit Card,2026-01-08,2026-01-12,Shipped,Mumbai,West,5.0,No
+ORD0006,C214,Customer 214,B007,Mindful Living,Self-Help,Sunrise Books,1,449.0,20.0,60.0,UPI,2026-01-02,2026-01-06,Delivered,Delhi,North,5.0,No
+ORD0007,C211,Customer 211,B011,Space Explorers,Children,LittleLeaf,3,279.0,10.0,60.0,Credit Card,2026-01-08,2026-01-10,Returned,Bengaluru,South,3.0,Yes
+ORD0008,C231,Unknown,B008,Build Better Habits,Self-Help,Sunrise Books,1,399.0,15.0,0.0,Credit Card,2026-01-25,2026-01-27,Delivered,Chennai,South,4.0,No
+ORD0009,C208,Customer 208,B010,Mountain Mystery,Fiction,NorthStar,3,299.0,10.0,0.0,UPI,2026-01-10,2026-01-13,Delivered,Bengaluru,South,5.0,No
+ORD0010,C204,Customer 204,B007,Mindful Living,Self-Help,Sunrise Books,1,449.0,5.0,0.0,Credit Card,2026-01-25,2026-01-31,Delivered,Kolkata,East,5.0,No
+ORD0011,C221,Customer 221,B008,Build Better Habits,Self-Help,Sunrise Books,1,399.0,0.0,0.0,UPI,2026-01-23,2026-01-26,Delivered,Hyderabad,South,4.0,No
+ORD0012,C225,Customer 225,B001,Python for Beginners,Technology,BrightInk,2,799.0,10.0,30.0,UPI,2026-01-13,2026-01-15,Delivered,Delhi,North,3.0,No
+ORD0013,C224,Customer 224,B002,Introduction to Data Science,Technology,NorthStar,2,999.0,5.0,60.0,Debit Card,2026-01-15,2026-01-19,Delivered,Pune,West,5.0,No
+ORD0014,C231,Customer 231,B011,Space Explorers,Children,LittleLeaf,1,279.0,10.0,30.0,Debit Card,2026-01-22,2026-01-25,Delivered,Mumbai,West,4.0,No
+ORD0015,C208,Customer 208,B002,Introduction to Data Science,Technology,NorthStar,3,999.0,10.0,50.0,Debit Card,2026-02-13,2026-02-16,Delivered,Kolkata,East,5.0,No
+ORD0016,C202,Customer 202,B001,Python for Beginners,Technology,BrightInk,1,799.0,0.0,60.0,UPI,2026-02-15,2026-02-18,Delivered,Chennai,South,4.0,No
+ORD0017,C203,Customer 203,B010,Mountain Mystery,Fiction,NorthStar,1,299.0,5.0,0.0,Net Banking,2026-02-05,2026-02-08,Delivered,Delhi,North,4.0,No
+ORD0018,C220,Customer 220,B011,Space Explorers,Children,LittleLeaf,4,279.0,0.0,60.0,UPI,2026-02-03,2026-02-07,Returned,Hyderabad,South,4.0,Yes
+ORD0019,C204,Customer 204,B008,Build Better Habits,Self-Help,Sunrise Books,3,399.0,,40.0,Credit Card,2026-02-11,2026-02-13,Delivered,Bengaluru,South,3.0,No
+ORD0020,C205,Customer 205,B002,Introduction to Data Science,Technology,NorthStar,2,999.0,10.0,50.0,Credit Card,2026-02-10,2026-02-15,Delivered,Chennai,South,4.0,No
+ORD0021,C215,Customer 215,B004,Ancient India,History,Heritage Press,2,599.0,0.0,30.0,Net Banking,2026-02-23,2026-02-25,Delivered,Pune,West,5.0,No
+ORD0022,C216,Customer 216,B002,Introduction to Data Science,Technology,NorthStar,2,999.0,5.0,40.0,UPI,2026-02-21,2026-02-25,Shipped,Chennai,South,2.0,No
+ORD0023,C232,Customer 232,B009,The Lost Map,Fiction,PageCraft,1,349.0,10.0,60.0,Credit Card,2026-02-17,2026-02-21,Delivered,Chennai,South,3.0,No
+ORD0024,C228,Customer 228,B005,World History Made Easy,History,Heritage Press,3,749.0,15.0,40.0,upi,2026-02-18,2026-02-22,Delivered,Chennai,South,4.0,No
+ORD0025,C229,Customer 229,B008,Build Better Habits,Self-Help,Sunrise Books,1,399.0,10.0,60.0,UPI,2026-02-23,2026-02-27,Delivered,Chennai,South,4.0,No
+ORD0026,C212,Customer 212,B003,Excel and Analytics,Technology,BrightInk,2,649.0,5.0,30.0,UPI,2026-02-05,2026-02-08,Shipped,Mumbai,West,4.0,No
+ORD0027,C203,Customer 203,B007,Mindful Living,Self-Help,Sunrise Books,1,449.0,10.0,60.0,UPI,2026-02-04,2026-02-10,Delivered,Bhubaneswar,East,4.0,No
+ORD0028,C224,Customer 224,B008,Build Better Habits,Self-Help,Sunrise Books,3,399.0,0.0,,Debit Card,2026-02-01,2026-02-06,Delivered,Bengaluru,South,5.0,No
+ORD0029,C229,Customer 229,B005,World History Made Easy,History,Heritage Press,3,749.0,15.0,0.0,Net Banking,2026-03-26,2026-03-30,Delivered,Bengaluru,South,4.0,No
+ORD0030,C217,Customer 217,B004,Ancient India,History,Heritage Press,2,599.0,15.0,0.0,Debit Card,2026-03-08,2026-03-11,Delivered,Delhi,North,4.0,No
+ORD0031,C211,Customer 211,B003,Excel and Analytics,Technology,BrightInk,2,649.0,15.0,50.0,Debit Card,2026-03-04,2026-03-07,Delivered,Delhi,North,4.0,No
+ORD0032,C227,Customer 227,B004,Ancient India,History,Heritage Press,1,599.0,0.0,0.0,Credit Card,2026-03-24,2026-03-30,Delivered,Bhubaneswar,East,5.0,No
+ORD0033,C228,Customer 228,B011,Space Explorers,Children,LittleLeaf,2,279.0,15.0,30.0,Cash on Delivery,2026-03-03,2026-03-05,Shipped,Delhi,North,5.0,No
+ORD0034,C217,Customer 217,B009,The Lost Map,Fiction,PageCraft,3,349.0,5.0,50.0,Cash on Delivery,2026-03-16,2026-03-21,Returned,Jaipur,North,3.0,Yes
+ORD0035,C231,Customer 231,B005,World History Made Easy, Technology ,Heritage Press,2,749.0,15.0,60.0,UPI,2026-03-31,2026-04-03,Shipped,Bengaluru,South,4.0,No
+ORD0036,C230,Customer 230,B007,Mindful Living,Self-Help,Sunrise Books,2,449.0,5.0,40.0,UPI,2026-03-13,2026-03-18,Delivered,Chennai,South,4.0,No
+ORD0037,C207,Customer 207,B001,Python for Beginners,Technology,BrightInk,1,799.0,10.0,50.0,UPI,2026-03-25,2026-03-29,Delivered,Mumbai,West,5.0,No
+ORD0038,C209,Customer 209,B010,Mountain Mystery,Fiction,NorthStar,3,299.0,15.0,0.0,Debit Card,2026-03-21,2026-03-23,Delivered,Kolkata,East,4.0,No
+ORD0039,C230,Customer 230,B004,Ancient India,History,Heritage Press,1,599.0,5.0,30.0,Credit Card,2026-03-11,2026-03-15,Returned,Bengaluru,South,2.0,Yes
+ORD0040,C204,Customer 204,B010,Mountain Mystery,Fiction,NorthStar,1,299.0,0.0,30.0,UPI,2026-03-26,2026-03-30,Returned,Pune,West,,Yes
+ORD0041,C210,Customer 210,B008,Build Better Habits,Self-Help,Sunrise Books,1,399.0,0.0,30.0,UPI,2026-03-06,2026-03-08,Shipped,Chennai,South,5.0,No
+ORD0042,C223,Customer 223,B001,Python for Beginners,Technology,BrightInk,3,799.0,5.0,40.0,Debit Card,2026-03-21,,Cancelled,Bhubaneswar,East,4.0,No
+ORD0043,C203,Customer 203,B007,Mindful Living,Self-Help,Sunrise Books,2,449.0,5.0,0.0,Debit Card,2026-04-17,2026-04-20,Delivered,Chennai,South,5.0,No
+ORD0044,C216,Customer 216,B008,Build Better Habits,Self-Help,Sunrise Books,3,399.0,0.0,0.0,UPI,2026-04-06,2026-04-12,Delivered,Chennai,South,5.0,No
+ORD0045,C212,Customer 212,B005,World History Made Easy,History,Heritage Press,1,749.0,5.0,40.0,UPI,2026-04-21,2026-04-27,Delivered,Kolkata,East,5.0,No
+ORD0046,C233,Customer 233,B010,Mountain Mystery,Fiction,NorthStar,2,299.0,20.0,30.0,UPI,2026-04-03,2026-04-05,Delivered,Hyderabad,South,3.0,No
+ORD0047,C202,Customer 202,B012,Adventure Storybook,Children,LittleLeaf,2,249.0,5.0,30.0,Debit Card,2026-04-18,2026-04-22,Delivered,Pune,West,4.0,No
+ORD0048,C207,Customer 207,B011,Space Explorers,Children,LittleLeaf,3,279.0,0.0,0.0,UPI,2026-04-23,2026-04-29,Delivered,Jaipur,North,4.0,No
+ORD0049,C212,Customer 212,B011,Space Explorers,Children,LittleLeaf,1,,5.0,30.0,UPI,2026-04-20,2026-04-24,Delivered,Jaipur,North,5.0,No
+ORD0050,C215,Customer 215,B001,Python for Beginners,Technology,BrightInk,4,799.0,10.0,60.0,Credit Card,2026-04-24,2026-04-29,Delivered,Bengaluru,South,4.0,No
+ORD0051,C214,Customer 214,B011,Space Explorers,Children,LittleLeaf,2,279.0,10.0,40.0,UPI,2026-04-12,2026-04-18,Returned,Bengaluru,South,5.0,Yes
+ORD0052,C207,Customer 207,B011,Space Explorers,Children,LittleLeaf,3,279.0,0.0,60.0,Net Banking,2026-04-03,2026-04-05,Returned,Bengaluru,South,5.0,Yes
+ORD0053,C210,Customer 210,B008,Build Better Habits,Self-Help,Sunrise Books,3,399.0,5.0,50.0,Net Banking,2026-04-16,2026-04-20,Delivered,Pune,West,3.0,No
+ORD0054,C218,Customer 218,B003,Excel and Analytics,Technology,BrightInk,1,649.0,0.0,40.0,Credit Card,2026-04-15,2026-04-17,Delivered,Chennai,South,4.0,No
+ORD0055,C215,Customer 215,B006,Indian Freedom Movement,History,PageCraft,2,499.0,10.0,40.0,Credit Card,2026-04-06,2026-04-10,Delivered,Kolkata,East,4.0,No
+ORD0056,C233,Customer 233,B011,Space Explorers,Children,LittleLeaf,3,279.0,10.0,30.0,UPI,2026-04-22,2026-04-27,Delivered,Bengaluru,South,3.0,No
+ORD0057,C213,Customer 213,B005,World History Made Easy,History,Heritage Press,2,749.0,15.0,60.0,Credit Card,2026-05-25,2026-05-27,Delivered,Chennai,South,4.0,No
+ORD0058,C224,Customer 224,B007,Mindful Living,Self-Help,Sunrise Books,1,449.0,0.0,30.0,UPI,2026-05-20,2026-05-25,Returned,Chennai,South,5.0,Yes
+ORD0059,C226,Customer 226,B010,Mountain Mystery,Fiction,NorthStar,1,299.0,0.0,40.0,Credit Card,2026-05-14,,Cancelled,Pune,West,5.0,No
+ORD0060,C232,Customer 232,B008,Build Better Habits,Self-Help,Sunrise Books,2,399.0,0.0,0.0,Debit Card,2026-05-08,2026-05-11,Delivered,Mumbai,West,4.0,No
+ORD0061,C211,Customer 211,B011,Space Explorers,Children,LittleLeaf,1,279.0,5.0,60.0,Cash on Delivery,2026-05-10,2026-05-14,Delivered,Mumbai,West,4.0,No
+ORD0062,C204,Customer 204,B008,Build Better Habits,Self-Help,Sunrise Books,1,399.0,0.0,30.0,Net Banking,,2026-05-17,Delivered,Mumbai,West,5.0,No
+ORD0063,C211,Customer 211,B006,Indian Freedom Movement,History,PageCraft,3,499.0,0.0,60.0,Debit Card,2026-05-05,2026-05-11,Delivered,Bhubaneswar,East,4.0,No
+ORD0064,C214,Customer 214,B012,Adventure Storybook,Children,LittleLeaf,1,249.0,20.0,60.0,UPI,2026-05-08,2026-05-10,Delivered,Bengaluru,South,5.0,No
+ORD0065,C210,Customer 210,B004,Ancient India,History,Heritage Press,2,599.0,15.0,30.0,UPI,2026-05-28,2026-06-01,Delivered,Chennai,South,4.0,No
+ORD0066,C215,Customer 215,B002,Introduction to Data Science,Technology,NorthStar,2,999.0,5.0,60.0,UPI,2026-05-30,2026-06-02,Delivered,Bhubaneswar,East,5.0,No
+ORD0067,C204,Customer 204,B010,Mountain Mystery,Fiction,NorthStar,1,299.0,5.0,0.0,Debit Card,2026-05-09,2026-05-13,Delivered,Delhi,North,2.0,No
+ORD0068,C205,Customer 205,B005,World History Made Easy,History,Heritage Press,1,749.0,15.0,60.0,Debit Card,2026-05-13,2026-05-17,Delivered,Delhi,North,3.0,No
+ORD0069,C204,Customer 204,B011,Space Explorers,Children,LittleLeaf,1,279.0,10.0,40.0,Cash on Delivery,2026-05-07,2026-05-13,Returned,Delhi,North,2.0,Yes
+ORD0070,C231,Customer 231,B004,Ancient India,History,Heritage Press,1,599.0,5.0,0.0,Cash on Delivery,2026-05-15,2026-05-20,Delivered,Pune,West,3.0,No
+ORD0071,C216,Customer 216,B007,Mindful Living,Self-Help,Sunrise Books,2,449.0,0.0,0.0,Cash on Delivery,2026-06-26,2026-06-28,Delivered,Delhi,North,5.0,No
+ORD0072,C216,Customer 216,B007,Mindful Living,Self-Help,Sunrise Books,1,449.0,10.0,60.0,Debit Card,2026-06-07,2026-06-11,Delivered,Hyderabad,South,4.0,No
+ORD0073,C220,Customer 220,B010,Mountain Mystery,Fiction,NorthStar,1,299.0,0.0,0.0,UPI,2026-06-25,2026-06-27,Delivered,Chennai,South,4.0,No
+ORD0074,C230,Customer 230,B006,Indian Freedom Movement,History,PageCraft,2,499.0,5.0,50.0,Debit Card,2026-06-18,2026-06-22,Delivered,Kolkata,East,5.0,No
+ORD0075,C225,Customer 225,B010,Mountain Mystery,Fiction,NorthStar,1,299.0,15.0,40.0,Debit Card,2026-06-28,2026-06-30,Delivered,Delhi,North,4.0,No
+ORD0076,C225,Customer 225,B007,Mindful Living,Self-Help,Sunrise Books,2,449.0,0.0,30.0,Debit Card,2026-06-16,2026-06-18,Delivered,Pune,West,2.0,No
+ORD0077,C214,Customer 214,B011,Space Explorers,Children,LittleLeaf,3,279.0,0.0,30.0,UPI,2026-06-22,2026-06-28,Delivered,Delhi,North,4.0,No
+ORD0078,C227,Customer 227,B001,Python for Beginners,Technology,BrightInk,3,799.0,10.0,40.0,UPI,2026-06-20,2026-06-26,Delivered,Delhi,North,3.0,No
+ORD0079,C213,Customer 213,B008,Build Better Habits,Self-Help,Sunrise Books,2,399.0,15.0,30.0,Cash on Delivery,2026-06-21,2026-06-25,Delivered,Mumbai,West,4.0,No
+ORD0080,C212,Customer 212,B011,Space Explorers,Children,LittleLeaf,2,279.0,0.0,30.0,UPI,2026-06-03,2026-06-07,Delivered,Jaipur,North,2.0,No
+ORD0081,C233,Customer 233,B012,Adventure Storybook,Children,LittleLeaf,2,249.0,15.0,0.0,UPI,2026-06-26,2026-06-28,Delivered,Delhi,North,4.0,No
+ORD0082,C223,Customer 223,B005,World History Made Easy,History,Heritage Press,2,749.0,5.0,50.0,Debit Card,2026-06-09,2026-06-12,Shipped,Bengaluru,South,5.0,No
+ORD0083,C212,Customer 212,B002,Introduction to Data Science,Technology,NorthStar,2,999.0,5.0,0.0,UPI,2026-06-18,2026-06-24,Delivered,Chennai,South,4.0,No
+ORD0084,C207,Customer 207,B012,Adventure Storybook,Children,LittleLeaf,2,249.0,0.0,40.0,Credit Card,2026-06-02,2026-06-06,Delivered,Chennai,South,2.0,No

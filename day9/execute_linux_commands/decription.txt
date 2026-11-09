@@ -1,0 +1,72 @@
+Day 9 Linux Commands:
+
+Objective:
+
+Practice 10 text utilities for examining logs, comparing versions, preparing reports, and
+combining records without editing system files.
+
+Setup before executing command:
+
+mkdir -p ~/linux_training/day9 && cd ~/linux_training/day9
+printf 'READY\nREADY\nFAILED\nREADY\nPENDING\nPENDING\nDONE\n' > statuses.txt
+printf 'server1,READY\nserver2,FAILED\nserver3,PENDING\n' > hosts.csv
+printf 'server1,eu-west\nserver2,ap-south\nserver3,us-east\n' > regions.csv
+printf 'alpha\nbeta\n' > version_a.txt
+printf 'alpha\ngamma\n' > version_b.txt
+printf 'Linux utilities help engineers compare configuration changes and prepare readable system reports during incidents.\n' > paragraph.txt
+
+All ten utilities are typically available in standard Ubuntu installations (GNU coreutils,
+sed, diffutils, binutils).
+
+Linux Commands:
+
+01. nl
+    Run      : nl -ba /etc/passwd | head -n 8
+    Purpose  : Number every line in a text file, including blank lines with -ba.
+    Expected : Shows numbered user-account entries; the first eight lines are displayed.
+
+02. sed
+    Run      : sed -n '1,8p' /etc/passwd
+    Purpose  : Print a selected line range without changing the source file.
+    Expected : Displays lines 1 through 8 of /etc/passwd.
+
+03. uniq
+    Run      : uniq -c statuses.txt
+    Purpose  : Count adjacent identical lines in a log or status file.
+    Expected : Shows consecutive READY/PENDING counts; non-adjacent READY remains separate.
+
+04. tac
+    Run      : tac statuses.txt
+    Purpose  : Read file lines in reverse order (last line first).
+    Expected : Prints DONE first and the first READY last.
+
+05. shuf
+    Run      : shuf -n 3 statuses.txt
+    Purpose  : Randomly select three input lines for sampling.
+    Expected : Prints three random status lines; results vary on each run.
+
+06. diff
+    Run      : diff -u version_a.txt version_b.txt
+    Purpose  : Compare two file versions using unified diff notation.
+    Expected : Shows beta removed and gamma added; exit status 1 means differences.
+
+07. split
+    Run      : split -l 3 statuses.txt chunk_
+    Purpose  : Divide a larger file into smaller three-line chunks.
+    Expected : Creates chunk_aa, chunk_ab, and chunk_ac in the practice folder.
+
+08. join
+    Run      : join -t ',' -1 1 -2 1 <(sort -t, -k1,1 hosts.csv) <(sort -t, -k1,1 regions.csv)
+    Purpose  : Merge sorted CSV-like datasets on their first common field.
+    Expected : Shows host, status, and region for matching server IDs.
+
+09. strings
+    Run      : strings /bin/bash | head -n 10
+    Purpose  : Extract human-readable strings embedded in an executable file.
+    Expected : Shows a sample of printable strings from Bash.
+
+10. fmt
+    Run      : fmt -w 48 paragraph.txt
+    Purpose  : Reflow prose to a maximum approximate line width.
+    Expected : Prints a wrapped paragraph that is easier to read in reports.
+

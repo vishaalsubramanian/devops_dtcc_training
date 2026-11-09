@@ -1,0 +1,61 @@
+10 Linux Commands:
+
+printf
+
+Prints formatted text and creates file content using special characters such as \n for new lines.
+
+
+comm
+
+Compares two sorted files line by line and displays unique and common lines.
+
+
+tr
+
+Translates or replaces characters, such as converting lowercase text to uppercase.
+
+
+paste
+
+Merges lines from multiple files horizontally, separating corresponding values with tabs by default.
+
+
+xargs
+
+Converts standard input into command-line arguments to execute commands such as wc -l on multiple files.
+
+
+pstree
+
+Displays running processes in a hierarchical tree structure, showing parent-child relationships and process IDs using -p.
+
+
+nice
+
+Starts a process with a specified scheduling priority (nice value), influencing CPU scheduling.
+
+
+renice
+
+Modifies the nice value of an already running process to adjust its scheduling priority.
+
+
+lsof
+
+Lists open files and identifies the processes accessing them.
+
+
+od
+
+Displays file contents in different representations, such as characters, octal, or hexadecimal values.
+
+
+fold
+
+Wraps long lines of text into shorter lines based on a specified width.
+
+
+rev
+
+Reverses the characters in each line of text.
+

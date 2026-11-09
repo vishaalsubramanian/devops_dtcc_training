@@ -1,0 +1,138 @@
+﻿order_id,order_date,customer_id,product_id,product_name,category,city,state,quantity,unit_price,discount_pct,shipping_fee,payment_method,order_status,sales_channel,customer_rating
+ELE-26-0015,2026-09-05,CUS-148,ENC-102,Compact Wireless Speaker,Audio,Bengaluru,Karnataka,2,2632.61,0,149,UPI,Delivered,Website,3
+ELE-26-0014,2026-08-17,CUS-117,ENC-110,Home Wi-Fi Mesh Router,Networking,Pune,Maharashtra,2,15069.29,15,149,Net Banking,Delivered,Marketplace,5
+ELE-26-0064,2026-09-12,CUS-135,ENC-112,Fast Charge Power Bank,Accessories,Chennai,Tamil Nadu,1,1815.50,20,0,Net Banking,Delivered,Mobile App,
+ELE-26-0045,2026-08-06,CUS-115,ENC-112,Fast Charge Power Bank,Accessories,Chennai,Tamil Nadu,4,1798.24,10,0,Cash on Delivery,Delivered,Mobile App,1
+ELE-26-0027,2026-08-10,CUS-146,ENC-106,USB-C Docking Station,Accessories,Kochi,Kerala,3,8434.23,0,0,Net Banking,Placed,Mobile App,
+ELE-26-0039,2026-09-30,CUS-138,ENC-105,27 Inch IPS Monitor,Displays,Jaipur,Rajasthan,2,18740.88,20,0,Wallet,Delivered,Website,1
+ELE-26-0011,2026-09-21,CUS-124,ENC-112,Fast Charge Power Bank,Accessories,Kolkata,West Bengal,1,1834.09,0,149,Card,Shipped,Mobile App,4
+ELE-26-0060,2026-09-19,CUS-151,ENC-105,27 Inch IPS Monitor,Displays,Coimbatore,Tamil Nadu,2,18415.26,5,99,Wallet,Delivered,Marketplace,3
+ELE-26-0021,2026-08-26,CUS-125,ENC-110,Home Wi-Fi Mesh Router,Networking,Kolkata,West Bengal,1,15081.86,15,99,UPI,Delivered,Marketplace,
+ELE-26-0118,2026-08-25,CUS-139,ENC-103,4K Streaming Device,Entertainment,Chennai,Tamil Nadu,1,5572.43,0,149,Net Banking,Delivered,Mobile App,3
+ELE-26-0035,2026-08-15,CUS-144,ENC-102,Compact Wireless Speaker,Audio,Jaipur,Rajasthan,1,2560.10,0,0,  upi ,Placed,Mobile App,3
+ELE-26-0067,2026-10-08,CUS-142,ENC-109,Portable SSD 1TB,Storage,Hyderabad,Telangana,5,10018.48,15,79,Net Banking,Delivered,Website,2
+ELE-26-0022,2026-10-13,CUS-154,ENC-109,Portable SSD 1TB,Storage,CHENNAI,Tamil Nadu,1,10021.65,20,0,UPI,Delivered,Mobile App,5
+ELE-26-0129,2026-09-25,CUS-103,ENC-112,Fast Charge Power Bank,Accessories,Hyderabad,Telangana,2,1766.60,15,149,Net Banking,Delivered,Website,1
+ELE-26-0046,2026-08-14,CUS-104,ENC-102,Compact Wireless Speaker,Audio,Jaipur,Rajasthan,4,2478.84,0,49,Card,Delivered,Marketplace,4
+ELE-26-0130,2026-09-12,CUS-105,ENC-107,Smart Fitness Watch,Wearables,Chennai,Tamil Nadu,2,6213.64,0,79,Card,Placed,Marketplace,
+ELE-26-0029,2026-10-01,CUS-145,ENC-108,Wireless Mouse,Accessories,Kochi,Kerala,2,1146.76,0,0,Card,Cancelled,Marketplace,
+ELE-26-0071,2026/08/29,CUS-104,ENC-111,4K Action Camera,Cameras,Jaipur,Rajasthan,1,20815.83,0,99,UPI,Returned,Mobile App,4
+ELE-26-0048,2026-09-09,CUS-115,ENC-101,Noise-Canceling Headphones,Audio,Chennai,Tamil Nadu,1,4727.39,0,149,UPI,Delivered,Mobile App,4
+ELE-26-0055,2026-08-23,CUS-123,ENC-103,4K Streaming Device,Entertainment,Delhi,Delhi,2,6045.32,20,79,Net Banking,Shipped,Website,4
+ELE-26-0113,2026-08-04,CUS-152,ENC-105,27 Inch IPS Monitor,Displays,Coimbatore,Tamil Nadu,1,19647.77,5,0,Net Banking,Delivered,Marketplace,
+ELE-26-0119,2026-08-26,CUS-129,ENC-112,Fast Charge Power Bank,Accessories,Bengaluru,Karnataka,1,2021.69,20,79,Card,Delivered,Mobile App,1
+ELE-26-0001,2026-08-18,CUS-118,ENC-107,Smart Fitness Watch,Wearables,Pune,Maharashtra,2,6405.24,10,0,UPI,Delivered,Website,
+ELE-26-0076,2026-08-13,CUS-105,ENC-111,4K Action Camera,Cameras,Hyderabad,Telangana,1,20791.67,5,49,UPI,Placed,Marketplace,3
+ELE-26-0002,2026-10-14,CUS-148,ENC-101,Noise-Canceling Headphones,Audio,Jaipur,Rajasthan,1,4289.58,5,149,Net Banking,Placed,Website,5
+ELE-26-0037,2026-10-15,CUS-153,ENC-112,Fast Charge Power Bank,Accessories,Delhi,Delhi,3,1941.42,0,79,Net Banking,Delivered,Marketplace,5
+ELE-26-0109,2026-08-16,CUS-115,ENC-109,Portable SSD 1TB,Storage,Jaipur,Rajasthan,3,9505.85,15,0,Cash on Delivery,Delivered,Marketplace,2
+ELE-26-0069,2026-08-13,CUS-152,ENC-106,USB-C Docking Station,Accessories,Delhi,Delhi,1,not_available,20,49,Wallet,Delivered,Mobile App,3
+ELE-26-0044,2026-10-01,CUS-142,ENC-110,Home Wi-Fi Mesh Router,Networking,Kolkata,West Bengal,1,14185.96,5,79,Cash on Delivery,Returned,Mobile App,
+ELE-26-0008,2026-09-06,CUS-116,ENC-109,Portable SSD 1TB,Storage,Chennai,Tamil Nadu,2,9989.31,10,149,Net Banking,Cancelled,Mobile App,3
+ELE-26-0009,2026-08-31,CUS-101,ENC-111,4K Action Camera,Cameras,Pune,Maharashtra,1,21952.67,15,99,Card,Delivered,Website,4
+ELE-26-0005,2026-08-05,CUS-121,ENC-109,Portable SSD 1TB,Storage,Pune,Maharashtra,2,10070.82,0,N/A,Card,Delivered,Mobile App,5
+ELE-26-0097,2026-09-09,CUS-117,ENC-110,Home Wi-Fi Mesh Router,Networking,Kochi,Kerala,1,14831.16,15,49,Cash on Delivery,Delivered,Website,1
+ELE-26-0043,2026-08-14,CUS-139,ENC-112,Fast Charge Power Bank,Accessories,Pune,Maharashtra,2,1787.36,10,99,Net Banking,Delivered,Website,4
+ELE-26-0123,2026-08-02,CUS-106,ENC-111,4K Action Camera,Cameras,Coimbatore,Tamil Nadu,1,22888.44,0,99,Wallet,Shipped,Website,4
+ELE-26-0034,2026-10-03,CUS-105,ENC-102,Compact Wireless Speaker,Audio,Coimbatore,Tamil Nadu,2,2647.11,5,99,Cash on Delivery,Delivered,Website,2
+ELE-26-0111,2026-08-07,CUS-147,ENC-106,USB-C Docking Station,Accessories,Jaipur,Rajasthan,1,8857.81,0,49,Wallet,Delivered,Marketplace,2
+ELE-26-0063,2026-09-17,CUS-155,ENC-107,Smart Fitness Watch,Wearables,delhi,Maharashtra,2,6021.11,0,0,Card,Delivered,Marketplace,
+ELE-26-0078,2026-08-29,CUS-136,ENC-107,Smart Fitness Watch,Wearables,Pune,Maharashtra,5,6325.20,5,0,Card,Delivered,Website,3
+ELE-26-0082,2026-09-12,CUS-107,ENC-106,USB-C Docking Station,Accessories,Kolkata,West Bengal,2,9024.01,15,0,Cash on Delivery,Placed,Website,2
+ELE-26-0007,2026-09-08,CUS-104,ENC-102,Compact Wireless Speaker,Audio, chennai ,Tamil Nadu,1,2325.16,0,99,UPI,Placed,Website,5
+ELE-26-0057,2026-09-03,CUS-148,ENC-103,4K Streaming Device,Entertainment,Delhi,Delhi,1,5789.89,0,0,Card,Delivered,Website,5
+ELE-26-0059,2026-10-04,CUS-155,ENC-110,Home Wi-Fi Mesh Router,Networking,Chennai,Tamil Nadu,2,14611.74,15,149,Cash on Delivery,Delivered,Mobile App,2
+ELE-26-0066,2026-09-11,CUS-155,ENC-111,4K Action Camera,Cameras,Kochi,Kerala,2,22213.68,0,149,Net Banking,Delivered,Mobile App,2
+ELE-26-0122,2026-08-22,CUS-120,ENC-109,Portable SSD 1TB,Storage,Pune,Maharashtra,1,9783.36,0,49,Wallet,Delivered,Mobile App,1
+ELE-26-0018,2026-08-26,CUS-160,ENC-106,USB-C Docking Station,Accessories,Jaipur,Rajasthan,1,9096.45,5,79,Card,Placed,Mobile App,
+ELE-26-0087,2026-09-27,CUS-126,ENC-108,Wireless Mouse,Accessories,Jaipur,Rajasthan,1,1159.04,0,149,UPI,Delivered,Mobile App,5
+ELE-26-0054,2026-08-30,CUS-140,ENC-110, home wi-fi mesh router ,Networking,Coimbatore,Tamil Nadu,2,14020.77,0,79,Wallet,Delivered,Mobile App,4
+ELE-26-0115,2026-08-04,CUS-108,ENC-105,27 Inch IPS Monitor,Displays,Coimbatore,Tamil Nadu,2,19687.56,0,0,Net Banking,Delivered,Website,5
+ELE-26-0049,2026-08-06,CUS-138,ENC-103,4K Streaming Device,Entertainment,Mumbai ,Kerala,4,5932.84,0,149,Net Banking,Delivered,Website,2
+ELE-26-0058,2026-09-24,CUS-157,ENC-110,Home Wi-Fi Mesh Router,Networking,Kolkata,West Bengal,3,15318.24,5,149,Card,Returned,Marketplace,5
+ELE-26-0086,2026-09-10,CUS-151,ENC-103,4K Streaming Device,Entertainment,Mumbai,Maharashtra,1,5939.53,5,79,Net Banking,Delivered,Mobile App,
+ELE-26-0024,2026-08-11,CUS-158,ENC-104,Mechanical Keyboard,Accessories,Mumbai,Maharashtra,1,6978.48,0,99,Card,Delivered,Mobile App,
+ELE-26-0013,2026-08-17,CUS-116,ENC-103,4K Streaming Device,Entertainment,Kolkata,West Bengal,1,"₹5,884.05",0,79,Wallet,Placed,Marketplace,4
+ELE-26-0075,2026-09-21,CUS-128,ENC-105,27 Inch IPS Monitor,Displays,Kochi,Kerala,2,17321.41,0,79,Net Banking,Returned,Mobile App,
+ELE-26-0107,2026-09-20,CUS-157,ENC-101,Noise-Canceling Headphones,Audio,Kochi,Kerala,3,4809.92,120,0,Cash on Delivery,Delivered,Mobile App,
+ELE-26-0070,2026-09-28,CUS-145,ENC-110,Home Wi-Fi Mesh Router,Networking,Chennai,Tamil Nadu,2,15872.88,15,0,Wallet,Delivered,Website,
+ELE-26-0085,2026-10-03,CUS-136,ENC-104,Mechanical Keyboard,Accessories,Jaipur,Rajasthan,1,6575.48,0,0,Cash on Delivery,Delivered,Marketplace,3
+ELE-26-0016,2026-08-07,CUS-127,ENC-101,Noise-Canceling Headphones,Audio,Pune,Maharashtra,5,4738.12,5,0,Net Banking,Delivered,Website,
+ELE-26-0052,2026-09-10,CUS-146,ENC-106,USB-C Docking Station,Accessories,Delhi,Delhi,1,9013.68,15,149,Net Banking,Delivered,Marketplace,4
+ELE-26-0077,2026-08-12,CUS-111,ENC-110,Home Wi-Fi Mesh Router,Networking,Mumbai,Maharashtra,3,16053.02,5,149,UPI, delivered ,Mobile App,2
+ELE-26-0117,2026-08-18,CUS-158,ENC-111,4K Action Camera,Cameras,Coimbatore,Tamil Nadu,1,22209.32,15,79,UPI,Returned,Mobile App,2
+ELE-26-0096,2026-08-04,CUS-110,ENC-112,Fast Charge Power Bank,Accessories,Delhi,Delhi,3,1852.76,0,79,Card,Delivered,Marketplace,3
+ELE-26-0028,2026-09-28,CUS-147,ENC-107,Smart Fitness Watch,Wearables,Hyderabad,Telangana,2,6218.37,10,49,UPI,Delivered,Website,2
+ELE-26-0038,2026-09-25,CUS-138,ENC-105,27 Inch IPS Monitor,Displays,Hyderabad,Telangana,4,17786.03,0,0,Cash on Delivery,Delivered,Mobile App,1
+ELE-26-0004,2026-09-21,CUS-145,ENC-107,Smart Fitness Watch,Wearables,,Delhi,3,6088.94,0,0,Cash on Delivery,Cancelled,Mobile App,4
+ELE-26-0127,2026-09-01,CUS-146,ENC-103,4K Streaming Device,Entertainment,Jaipur,Rajasthan,3,5517.08,20,149,UPI,Delivered,Mobile App,
+ELE-26-0006,2026-08-26,CUS-135,ENC-110,Home Wi-Fi Mesh Router,Networking,Kochi,Kerala,3,15883.40,15,149,Wallet,Delivered,Website,4
+ELE-26-0095,2026-09-23,CUS-122,ENC-108,Wireless Mouse,Accessories,Mumbai,Maharashtra,2,1203.25,20,99,UPI,Delivered,Website,
+ELE-26-0065,2026-08-04,CUS-113,ENC-107,Smart Fitness Watch,Wearables,Jaipur,Rajasthan,2,6180.58,15,0,Net Banking,Delivered,Mobile App,2
+ELE-26-0072,2026-08-05,CUS-151,ENC-112,Fast Charge Power Bank,Accessories,Jaipur,Rajasthan,2,1962.64,20,79,Net Banking,Shipped,Marketplace,2
+ELE-26-0089,2026-08-27,CUS-142,ENC-107,Smart Fitness Watch,Wearables,Kolkata,West Bengal,1,6405.78,15,99,Net Banking,Delivered,Mobile App,1
+ELE-26-0121,2026-08-08,CUS-142,ENC-107,Smart Fitness Watch,Wearables,Pune,Maharashtra,2,6449.03,0,149,Net Banking,Delivered,Mobile App,4
+ELE-26-0125,2026-08-31,CUS-148,ENC-103,4K Streaming Device,Entertainment,Kochi,Kerala,3,5918.97,10,79,Net Banking,Shipped,Website,5
+ELE-26-0073,2026-09-15,CUS-151,ENC-104,Mechanical Keyboard,Accessories,Coimbatore,Tamil Nadu,1,6543.31,0,49,Net Banking,Placed,Mobile App,2
+ELE-26-0102,2026-08-29,CUS-144,ENC-107,Smart Fitness Watch,Wearables,Bengaluru,Karnataka,1,5944.39,15,0,Card,Delivered,Mobile App,5
+ELE-26-0023,2026-10-11,CUS-150,ENC-107,Smart Fitness Watch,Wearables,Coimbatore,Tamil Nadu,1,6734.10,20,99,UPI,Delivered,Mobile App,
+ELE-26-0110,2026-08-25,CUS-119,ENC-101,Noise-Canceling Headphones,Audio,Hyderabad,Telangana,2,4371.50,0,0,UPI,Delivered,Marketplace,2
+ELE-26-0033,2026-09-06,CUS-108,ENC-109,Portable SSD 1TB,Storage,Bengaluru,Karnataka,1,9381.38,15,0,UPI,Delivered,Mobile App,
+ELE-26-0019,2026-08-03,CUS-112,ENC-110,Home Wi-Fi Mesh Router,Networking,Chennai,Tamil Nadu,1,14008.54,5,149,,Delivered,Mobile App,5
+ELE-26-0032,2026-08-26,CUS-109,ENC-105,27 Inch IPS Monitor,Displays,Coimbatore,Tamil Nadu,2,19778.45,5,79,Net Banking,Delivered,Website,4
+ELE-26-0088,2026-08-16,CUS-116,ENC-103,4K Streaming Device,Entertainment,Jaipur,Rajasthan,1,5241.96,10,149,Net Banking,Delivered,Mobile App,
+ELE-26-0061,2026-09-05,CUS-142,ENC-108,Wireless Mouse,Accessories,Mumbai,Maharashtra,1,1178.99,0,99,Cash on Delivery,Placed,Mobile App,
+ELE-26-0126,2026-10-14,CUS-137,ENC-112,Fast Charge Power Bank,Accessories,Hyderabad,Telangana,4,1986.70,0,79,UPI,Cancelled,Website,
+ELE-26-0012,2026-09-24,CUS-131,ENC-106,USB-C Docking Station,Accessories,Coimbatore,Tamil Nadu,2,9123.59,20,99,Cash on Delivery,Delivered,Marketplace,
+ELE-26-0104,2026-09-03,CUS-103,ENC-108,Wireless Mouse,Accessories,Jaipur,Rajasthan,4,1122.43,0,149,Cash on Delivery,Delivered,Website,4
+ELE-26-0120,2026-13-40,CUS-108,ENC-108,Wireless Mouse,Accessories,Pune,Maharashtra,1,1185.82,10,79,Net Banking,Delivered,Mobile App,1
+ELE-26-0003,2026-08-08,CUS-132,ENC-108,Wireless Mouse,Accessories,Coimbatore,Tamil Nadu,4,1271.01,0,0,UPI,Delivered,Website,4
+ELE-26-0009,2026-08-31,CUS-101,ENC-111,4K Action Camera,Cameras,Pune,Maharashtra,1,21952.67,15,99,Card,Delivered,Website,4
+ELE-26-0042,2026-08-07,CUS-112,ENC-104,Mechanical Keyboard,Accessories,Chennai,Tamil Nadu,1,7393.95,0,49,Wallet,Delivered,Mobile App,2
+ELE-26-0033,2026-09-06,CUS-108,ENC-109,Portable SSD 1TB,Storage,Bengaluru,Karnataka,1,9381.38,15,0,UPI,Delivered,Mobile App,
+ELE-26-0031,2026-08-30,CUS-129,ENC-108,Wireless Mouse,Accessories,Jaipur,Rajasthan,,1143.83,0,79,Cash on Delivery,Delivered,Mobile App,3
+ELE-26-0062,2026-09-26,CUS-128,ENC-111,4K Action Camera,Cameras,Bengaluru,Karnataka,3,21039.03,10,149,Wallet,Delivered,Marketplace,4
+ELE-26-0116,2026-08-10,CUS-115,ENC-109,Portable SSD 1TB,Storage,Hyderabad,Telangana,0,10789.33,10,79,UPI,Delivered,Website,5
+ELE-26-0051,2026-08-31,CUS-156,ENC-105,27 Inch IPS Monitor,Displays,Delhi,Delhi,2,,5,99,Card,Returned,Website,1
+ELE-26-0112,2026-09-17,CUS-117,ENC-105,27 Inch IPS Monitor,Displays,Bengaluru,Karnataka,2,17521.34,5,0,Card,Delivered,Marketplace,2
+ELE-26-0066,2026-09-11,CUS-155,ENC-111,4K Action Camera,Cameras,Kochi,Kerala,1,22213.68,0,149,Net Banking,Delivered,Mobile App,2
+ELE-26-0068,2026-10-14,CUS-113,ENC-112,Fast Charge Power Bank,Accessories,Chennai,Tamil Nadu,2,1824.79,0,0,UPI,Shipped,Mobile App,2
+ELE-26-0100,2026-08-16,CUS-147,ENC-103,4K Streaming Device,Entertainment,Coimbatore,Tamil Nadu,1,5235.86,0,0,Card,Placed,Mobile App,2
+ELE-26-0106,2026-09-22,CUS-133,ENC-106,USB-C Docking Station,Accessories,Chennai,Tamil Nadu,1,8893.86,20,0,Net Banking,Delivered,Mobile App,4
+ELE-26-0017,2026-10-04,CUS-128,ENC-103,4K Streaming Device,Entertainment,Hyderabad,Telangana,5,5311.02,5,0,UPI,Delivered,Website,
+ELE-26-0026,2026-09-21,CUS-146,ENC-103,4K Streaming Device,Entertainment,Jaipur,Rajasthan,1,5749.83,0,99,UPI,Placed,Mobile App,3
+ELE-26-0124,2026-08-25,CUS-131,ENC-107,Smart Fitness Watch,Wearables,Coimbatore,Tamil Nadu,250,5893.89,0,149,Cash on Delivery,Delivered,Website,3
+ELE-26-0101,2026-09-18,CUS-158,ENC-106,USB-C Docking Station,Accessories,Kolkata,West Bengal,3,8016.65,20,79,Wallet,Delivered,Website,5
+ELE-26-0103,2026-08-23,CUS-138,ENC-106,USB-C Docking Station,Accessories,Kochi,Kerala,2,8390.06,15,0,Cash on Delivery,Delivered,Website,
+ELE-26-0053,2026-08-04,CUS-153,ENC-101,Noise-Canceling Headphones,Audio,Kochi,Kerala,3,4561.57,10,0,Card,Delivered,Marketplace,5
+ELE-26-0099,2026-09-18,CUS-113,ENC-109,Portable SSD 1TB,Storage,Chennai,Tamil Nadu,2,10122.56,20,149,UPI,Delivered,Mobile App,
+ELE-26-0084,2026-08-27,CUS-118,ENC-108,Wireless Mouse,Accessories,Kolkata,West Bengal,1,-199.00,10,79,Wallet,Delivered,Marketplace,2
+ELE-26-0081,2026-08-01,CUS-148,ENC-112,Fast Charge Power Bank,Accessories,Bengaluru,Karnataka,3,1997.40,0,0,Cash on Delivery,Placed,Marketplace,
+ELE-26-0074,,CUS-128,ENC-109,Portable SSD 1TB,Storage,Chennai,Tamil Nadu,3,9926.71,10,99,Wallet,Shipped,Marketplace,
+ELE-26-0091,2026-08-03,CUS-123,ENC-106,USB-C Docking Station,Accessories,Chennai,Tamil Nadu,1,985000.00,0,0,Cash on Delivery,Delivered,Marketplace,4
+ELE-26-0090,2026-09-10,CUS-104,ENC-112,Fast Charge Power Bank,Accessories,Kolkata,West Bengal,1,1896.27,5,79,Card,Delivered,Website,5
+ELE-26-0079,2026-09-11,CUS-147,ENC-102,Compact Wireless Speaker,Audio,Pune,Maharashtra,4,2528.12,0,0,Card,Shipped,Mobile App,3
+ELE-26-0105,2026-08-01,CUS-115,ENC-111,4K Action Camera,Cameras,Jaipur,Rajasthan,1,20584.59,15,99,UPI,Delivered,Marketplace,4
+ELE-26-0050,2026-09-09,CUS-129,ENC-101,Noise-Canceling Headphones,Audio,Mumbai,Maharashtra,1,4393.88,0,49,Cash on Delivery,Cancelled,Marketplace,
+ELE-26-0030,2026-10-10,CUS-136,ENC-109,Portable SSD 1TB,Storage,Kochi,Kerala,3,10588.05,0,149,Wallet,Delivered,Marketplace,4
+ELE-26-0020,2026-08-06,CUS-152,ENC-110,Home Wi-Fi Mesh Router,Networking,Delhi,Delhi,1,14255.70,0,49,Card,Delivered,Marketplace,
+ELE-26-0041,2026-08-25,CUS-133,ENC-105,27 Inch IPS Monitor,Displays,bangalore,Tamil Nadu,1,17824.04,15,149,UPI,Placed,Mobile App,3
+ELE-26-0010,2026-09-08,CUS-101,ENC-101,Noise-Canceling Headphones,Audio,Pune,Maharashtra,2,4389.96,0,0,Wallet,Delivered,Website,1
+ELE-26-0102,2026-08-29,CUS-144,ENC-107,Smart Fitness Watch,Wearables,Bengaluru,Karnataka,1,5944.39,15,0,Card,Delivered,Mobile App,5
+ELE-26-0112,2026-09-17,CUS-117,ENC-105,27 Inch IPS Monitor,Displays,Bengaluru,Karnataka,3,17521.34,5,0,Card,Delivered,Marketplace,2
+ELE-26-0016,2026-08-07,CUS-127,ENC-101,Noise-Canceling Headphones,Audio,Pune,Maharashtra,4,4738.12,5,0,Net Banking,Delivered,Website,
+ELE-26-0094,2026-09-15,,ENC-109,Portable SSD 1TB,Storage,Pune,Maharashtra,2,9528.11,10,79,Cash on Delivery,Delivered,Website,4
+ELE-26-0040,19/08/2026,CUS-135,ENC-106,USB-C Docking Station,Accessories,Hyderabad,Telangana,1,8827.12,20,0,Net Banking,Placed,Website,1
+ELE-26-0098,2026-08-31,CUS-145,ENC-102,Compact Wireless Speaker,Audio,HYDERABAD,Karnataka,1,2434.14,0,79,Wallet,Delivered,Website,2
+ELE-26-0093,2026-09-21,CUS-131,ENC-103,4K Streaming Device,Entertainment,Mumbai,Maharashtra,1,5265.98,0,149,UPI,Delivered,Website,
+ELE-26-0025,2026-09-28,CUS-140,ENC-108,Wireless Mouse, ACCESSORIES ,Chennai,Tamil Nadu,3,1165.12,5,0,Cash on Delivery,Delivered,Marketplace,2
+ELE-26-0114,2026-09-30,CUS-118,ENC-108,Wireless Mouse,Accessories,Chennai,Tamil Nadu,4,1188.85,,0,Cash on Delivery,Delivered,Mobile App,2
+ELE-26-0060,2026-09-19,CUS-151,ENC-105,27 Inch IPS Monitor,Displays,Coimbatore,Tamil Nadu,2,18415.26,5,99,Wallet,Delivered,Marketplace,3
+ELE-26-0056,2026-09-18,CUS-159,ENC-108,Wireless Mouse,Accessories,Pune,Maharashtra,1,1188.72,0,99,Wallet,Delivered,Website,3
+ELE-26-0128,2026-10-14,CUS-119,ENC-107,Smart Fitness Watch,Wearables,Chennai,Tamil Nadu,1,5887.87,0,79,Wallet,Delivered,Marketplace,2
+ELE-26-0080,2026-09-18,CUS-103,ENC-105,27 Inch IPS Monitor,Displays, coimbatore,Delhi,3,19815.32,5,49,Cash on Delivery,Delivered,Marketplace,3
+ELE-26-0108,2026-09-22,CUS-126,ENC-107,Smart Fitness Watch,Wearables,Coimbatore,Tamil Nadu,3,5873.46,10,0,UPI,Delivered,Mobile App,3
+ELE-26-0047,2026-08-05,CUS-146,ENC-107,Smart Fitness Watch,Wearables,Mumbai,Maharashtra,2,"6,177.23",0,149,Wallet,Shipped,Mobile App,4
+ELE-26-0083,2026-08-08,CUS-123,ENC-110,Home Wi-Fi Mesh Router,Networking,Delhi,Delhi,2,15992.72,10,49,Net Banking,Cancelled,Marketplace,2
+ELE-26-0036,2026-10-06,CUS-112,ENC-101,Noise-Canceling Headphones,Audio,Kolkata,West Bengal,2,4264.23,20,0,Wallet,Delivered,Website,
+ELE-26-0092,2026-09-19,CUS-145,ENC-103,4K Streaming Device,Entertainment,Pune,Maharashtra,1,5809.60,20,0,UPI,Delivered,Mobile App,
