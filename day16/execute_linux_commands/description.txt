@@ -1,0 +1,69 @@
+Day 16 Linux Commands:
+
+Objective:
+
+Practice 10  commands commonly used when investigating slow jobs, process behavior,
+resource usage, file locks, and terminal evidence.
+
+Setup:
+
+mkdir -p ~/linux_training/day16 && cd ~/linux_training/day16
+sleep 180 &
+LAB_PID=$!
+
+Packages to be installed:
+
+Install missing tools (as needed): sudo apt update && sudo apt install -y strace time procps
+util-linux
+
+Linux Commands:
+
+01. pgrep
+    Run      : pgrep -a sleep
+    Purpose  : Find running processes by executable name and show their PIDs.
+    Expected : Shows the training sleep process, possibly with other sleep processes.
+
+02. watch
+    Run      : watch -n 1 "ps -p $LAB_PID -o pid,etime,comm"
+    Purpose  : Refresh a process-status command every second in real time.
+    Expected : Displays changing elapsed time until you exit with Ctrl+C.
+
+03. taskset
+    Run      : taskset -pc "$LAB_PID"
+    Purpose  : Read the CPU affinity set of the test process.
+    Expected : Prints the logical CPUs on which the process is allowed to run.
+
+04. strace
+    Run      : strace -c -o syscall_summary.txt /usr/bin/true
+    Purpose  : Trace and summarize system calls performed by a short-lived process.
+    Expected : Creates a report counting system calls, errors, and elapsed time.
+
+05. /usr/bin/time
+    Run      : /usr/bin/time -v sh -c 'sleep 1'
+    Purpose  : Measure wall-clock time, CPU use and peak memory for a command.
+    Expected : Prints detailed execution statistics to standard error.
+
+06. flock
+    Run      : flock -x session.lock -c 'sleep 20' & LOCK_PID=$!
+    Purpose  : Hold an exclusive advisory lock on a disposable file for 20 seconds.
+    Expected : Starts a temporary lock holder in the background.
+
+07. lslocks
+    Run      : lslocks | grep 'session.lock'
+    Purpose  : Inspect current file locks while the background flock command is active.
+    Expected : Shows the lab lock entry if checked before the 20-second timer ends.
+
+08. getconf
+    Run      : getconf PAGE_SIZE
+    Purpose  : Query the OS for a configurable system value.
+    Expected : Shows the system memory page size, commonly 4096 bytes.
+
+09. logger
+    Run      : logger -t linux-training "Day 16 lab log message"
+    Purpose  : Send a tagged diagnostic message to the system logging interface.
+    Expected : Command normally prints nothing; logging destinations depend on setup.
+
+10. script
+    Run      : script -q -c 'printf "Linux Day 16 terminal recording\n"' terminal_session.log
+    Purpose  : Record the output of a test terminal command into a local transcript.
+    Expected : Creates terminal_session.log containing a short recorded session.

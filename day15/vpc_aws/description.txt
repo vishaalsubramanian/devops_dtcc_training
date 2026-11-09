@@ -1,0 +1,39 @@
+Title: AWS VPC Networking and Two-Tier Web Application Deployment
+
+Issue Type: Task
+
+Assignee: Vishaal
+
+Description:
+
+Create a custom AWS VPC and configure a complete public and private subnet architecture. Set up internet connectivity, routing, NAT Gateway, Elastic IP, and security groups.
+
+Launch two EC2 instances, hosting a homepage in the public subnet and a login application in the private subnet. Configure secure communication between both instances and verify application accessibility.
+
+Assigned IP Ranges:
+
+VPC CIDR: 10.0.0.0/16
+
+Public Subnet: 10.0.10.0/24
+
+Private Subnet: 10.0.20.0/24
+
+Tasks to Complete:
+
+Create the VPC and two subnets with the assigned CIDR ranges.
+
+Configure Internet Gateway, public/private route tables, and subnet associations.
+
+Set up NAT Gateway with Elastic IP for private subnet outbound connectivity.
+
+Create public and private security groups with appropriate inbound/outbound rules.
+
+Launch two EC2 instances with the required OS, key pair, and network configurations.
+
+Deploy homepage and login application code, connecting the public-facing application to the private instance.
+
+Verify public access, private connectivity, application responses, and login functionality.
+
+Document the architecture, test results, and resource cleanup process.
+
+Expected Outcome: A working two-tier AWS application with secure public/private networking and verified connectivity.
